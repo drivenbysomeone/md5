@@ -13,7 +13,7 @@
   <section
     class="bg-[#212a4b] text-white flex flex-wrap relative mx-auto box-border -mr-15 -ml-15 p-12"
   >
-    <div class="service-component block">
+    <div class="service-component">
       <h2 class="uppercase text-xl mb-5 leading-tight">Rørbukning</h2>
       <p class="text-[#d1d0da] text-[15px] mb-50">
         Vi udfører rørbukning i rustfri stål, fra Ø10-Ø90mm og op til 6000mm
