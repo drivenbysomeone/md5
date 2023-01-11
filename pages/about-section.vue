@@ -98,12 +98,12 @@ import { Vue, Component, Prop } from "vue-property-decorator";
       ],
     };
   },
-  components: {
+  /*   components: {
     Phone,
     Email,
     Cta,
     SubHeader,
-  },
+  }, */
 })
 export default class Services extends Vue {
   scrollToBottom() {
