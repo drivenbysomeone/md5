@@ -49,6 +49,7 @@
       <Button><span class="skew-x-[40deg]">læs mere</span></Button>
     </div>
   </section>
+  <!-- about section-->
 </template>
 
 <script lang="ts">
