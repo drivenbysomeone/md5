@@ -25,4 +25,8 @@ export default {
   font-size: 700%;
   font-style: italic;
 }
+/* 
+.about-section {
+
+} */
 </style>
