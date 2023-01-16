@@ -12,9 +12,9 @@
   <!-- Services -->
   <div class="body">
     <section
-      class="bg-[#212a4b] text-white grid grid-rows-4 lg:grid-cols-4 gap-10 mx-auto box-border -mr-15 -ml-15 p-12 mh-auto"
+      class="bg-[#212a4b] text-white grid grid-row lg:grid-cols-4 mx-auto box-border"
     >
-      <div class="service-component relative">
+      <div class="service-component relative -mr-15 -ml-15 p-12 mh-auto">
         <h2 class="uppercase text-xl mb-5 leading-tight">Rørbukning</h2>
         <p class="block text-[#d1d0da] text-[15px] mb-[50px]">
           Vi udfører rørbukning i rustfri stål, fra Ø10-Ø90mm og op til 6000mm
@@ -23,7 +23,7 @@
 
         <Button><span class="skew-x-[40deg]">læs mere</span></Button>
       </div>
-      <div class="service-component relative">
+      <div class="service-component relative -mr-15 -ml-15 p-12 mh-auto">
         <h2 class="uppercase text-xl mb-5 leading-tight">RØROPTRÆK</h2>
         <p class="block text-[#d1d0da] text-[15px] mb-[50px]">
           Vi udfører røroptræk i rustfri stål, og med vores eget udviklet
@@ -32,7 +32,7 @@
 
         <Button><span class="skew-x-[40deg]">læs mere</span></Button>
       </div>
-      <div class="service-component relative">
+      <div class="service-component relative -mr-15 -ml-15 p-12 mh-auto">
         <h2 class="uppercase text-xl mb-5 leading-tight">ENDEFORMNING</h2>
         <p class="block text-[#d1d0da] text-[15px] mb-[50px]">
           Vi tilbyder ende formning i rustfri stål max godstykkelse 4mm, og med
@@ -41,7 +41,7 @@
 
         <Button><span class="skew-x-[40deg]">læs mere</span></Button>
       </div>
-      <div class="service-component relative">
+      <div class="service-component relative -mr-15 -ml-15 p-12 mh-auto">
         <h2 class="uppercase text-xl mb-5 leading-tight">AUTOMATSVEJSNING</h2>
         <p class="block text-[#d1d0da] text-[15px] mb-[50px]">
           Vi kan tilbyde Automatisk tig svejsning, med emnevægt op til 250kg, og

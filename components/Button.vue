@@ -2,7 +2,7 @@
   <!-- flex bg-white font-semibold uppercase border border-solid border-2 rounded-none mr-15 -skew-x-[40deg] ease-in transition ease-in hover:border-white hover:border-solid hover:border-2 hover:bg-opacity-0 duration-150 justify-end justify-center px-4 md:px-5 py-1 md:py-2 absolute bottom-[18px] right-[12%]" -->
 
   <button
-    class="flex bg-white text-[#212a4b] hover:text-white font-semibold uppercase cursor-pointer rounded-none mr-15 -skew-x-[40deg] ease-in transition hover:border-white hover:border-solid hover:border-2 hover:bg-opacity-0 duration-150 justify-end justify-center px-4 md:px-12 px-6 py-1 md:py-2 absolute bottom-0 right-[12%]"
+    class="flex bg-white text-[#212a4b] hover:text-white font-semibold uppercase cursor-pointer rounded-none mr-15 -skew-x-[40deg] ease-in transition hover:border-white hover:border-solid hover:border-2 hover:bg-opacity-0 duration-150 justify-end justify-center px-4 md:px-12 px-6 py-1 md:py-2 absolute bottom-[18px] right-[12%] mb-[30px]"
     :class="{
       'bg-gray-70 text-white': dark,
       'bg-transparent shadow-none hover:shadow-inner text-gray-800': flat,
