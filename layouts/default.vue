@@ -19,7 +19,7 @@ export default {
   },
 };
 </script>
-<style>
+<!-- <style>
 .service-section {
   h: 60;
   font-size: 700%;
@@ -29,7 +29,7 @@ export default {
 .about-section {
 
 } */
-</style>
+</style> -->
 
 <style>
 html {
@@ -44,5 +44,13 @@ html {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+}
+
+/*   padding: 28px; */
+
+h2,
+h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
 }
 </style>
