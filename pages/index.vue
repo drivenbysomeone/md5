@@ -50,21 +50,19 @@
         <Button><span class="skew-x-[40deg]">læs mere</span></Button>
       </div>
     </section>
-    <section
-      class="section-about mt-28 mb-28 min-w-[800px] h-[calc(400px+14rem)] w-full"
-    >
-      <div
-        class="md:container md:mx-auto w-full pr-[15px] pl-[15px] mr-auto ml-auto"
-      >
+    <section class="pt-28 pb-28 min-w-[800px] w-full">
+      <div class="md:mx-auto w-full pr-[15px] pl-[15px] mr-auto ml-auto">
         <div class="flex flex-wrap flex-row -mr-[15px] -ml-[15px] box-border">
           <div
-            class="pr-6 relative leading-relaxed h-[25rem] w-1/2 float-rigth block block"
+            class="pr-6 relative leading-relaxed h-[25rem] w-1/2 float-right block pl-[15px] pt-[48px] pb-[48px]"
           >
             <div
-              class="absolute -translate-x-1/2 -translate-y-1/2 inset-y-1/2 left-[56%] w-[87%]"
+              class="absolute top-2/4 left-[56%] -translate-x-1/2 -translate-y-1/2 w-[87%] box-border"
             >
-              <h2 class="uppercase">alt fra prototype til serieproduktion</h2>
-              <p class="mt-0 mb-4">
+              <h2 class="uppercase mt-0 font-medium">
+                alt fra prototype til serieproduktion
+              </h2>
+              <p class="mt-0 mb-4 block mb-1">
                 Vi er sparingspartner fra prototype til serie produktion, og
                 vores mission er at lette vores kunders hverdag. Dette ligger vi
                 i hurtige leveringer samt kvalitets arbejde, vi står altid klar
@@ -80,10 +78,12 @@
               </p>
             </div>
             <!-- Picture here -->
-            <div class="z-4 h-[25rem] overflow-hidden relative w-full block">
+            <div
+              class="box-border block relative h-[25rem] z-4 leading-[1.6rem] overflow-hidden"
+            >
               <a
                 href="#"
-                class="flex flex-wrap no-underline hover:no-underline"
+                class="flex flex-wrap no-underline hover:no-underline text-inherit"
               >
                 <img
                   src="~/assets/images/mdstainless1.jpg"
