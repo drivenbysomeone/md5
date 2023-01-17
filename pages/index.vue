@@ -51,13 +51,15 @@
       </div>
     </section>
     <section
-      class="section-about pt-7rem pb-7rem min-w-[800px] float-right h-[calc(400px+14rem)] container mx-auto"
+      class="section-about mt-28 mb-28 min-w-[800px] h-[calc(400px+14rem)] w-full"
     >
       <div
         class="md:container md:mx-auto w-full pr-[15px] pl-[15px] mr-auto ml-auto"
       >
         <div class="flex flex-wrap flex-row -mr-[15px] -ml-[15px] box-border">
-          <div class="pr-6 relative leading-relaxed h-[25rem] w-1/2">
+          <div
+            class="pr-6 relative leading-relaxed h-[25rem] w-1/2 float-rigth block block"
+          >
             <div
               class="absolute -translate-x-1/2 -translate-y-1/2 inset-y-1/2 left-[56%] w-[87%]"
             >
@@ -76,6 +78,19 @@
                 har i foråret 2016 implementeret certificeringerne DS/EN ISO
                 9001:2008 samt ISO 3834-2:2006.
               </p>
+            </div>
+            <!-- Picture here -->
+            <div class="z-4 h-[25rem] overflow-hidden relative w-full block">
+              <a
+                href="#"
+                class="flex flex-wrap no-underline hover:no-underline"
+              >
+                <img
+                  src="~/assets/images/mdstainless1.jpg"
+                  alt="person-welding"
+                  class="absolute -bottom-[12%] align-middle w-full"
+                />
+              </a>
             </div>
           </div>
         </div>
