@@ -87,7 +87,7 @@
             </div>
             <!-- Picture here -->
             <div
-              class="box-border block relative h-[25rem] z-4 leading-[1.6rem] overflow-hidden left-[1200px] align-middle"
+              class="box-border block relative h-[25rem] z-4 leading-[1.6rem] overflow-hidden left-[1200px] align-middle -top-12"
             >
               <a
                 href="#"
