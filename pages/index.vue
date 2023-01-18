@@ -11,6 +11,14 @@
 
   <!-- Services -->
   <body>
+    <Nav>
+      MDS Logo here
+      <div
+        class="flex justify-between items-center box-border text-base font-normal pl-[100px] bg-[#212a4be6] ml-0 mr-0 pl-[100px] pr-[15px]"
+      >
+        Link list here
+      </div>
+    </Nav>
     <section
       class="bg-[#212a4b] text-white grid grid-row lg:grid-cols-4 mx-auto box-border"
     >
