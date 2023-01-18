@@ -79,16 +79,16 @@
             </div>
             <!-- Picture here -->
             <div
-              class="box-border block relative h-[25rem] z-4 leading-[1.6rem] overflow-hidden"
+              class="box-border block relative h-[25rem] z-4 leading-[1.6rem] overflow-hidden left-[1200px] align-middle"
             >
               <a
                 href="#"
-                class="flex flex-wrap no-underline hover:no-underline text-inherit"
+                class="flex flex-wrap no-underline hover:no-underline text-inherit block items-end"
               >
                 <img
                   src="~/assets/images/mdstainless1.jpg"
                   alt="person-welding"
-                  class="absolute -bottom-[12%] align-middle w-full"
+                  class="absolute -bottom-[12%] w-full"
                 />
               </a>
             </div>
