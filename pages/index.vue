@@ -104,6 +104,36 @@
         </div>
       </div>
     </section>
+    <!-- MANGLER -->
+    <section
+      class="mb-14 sm:mb-28 relative h-auto max-h-[25rem] overflow-hidden z-19 object-scale-down bg-[#212a4b]"
+    >
+      <div class="text-center container mx-auto px-5 py-10 sm:p-28">
+        <div>
+          <h2 class="uppercase text-white">
+            Kontakt os for at høre mere om dine muligheder
+          </h2>
+
+          <div class="flex gap-8 flex-row justify-center">
+            <Button class="flex justify-center">Knap </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--     <section
+      class="relative h-auto max-h-[25rem] overflow-hidden z-19 object-scale-down"
+    >
+      <div class="absolute block z-1000 h-full top-0 left-0 bg-[#212a4b]"></div>
+      <div
+        class="absolute z-2000 -translate-x-2/4 -translate-y-2/4 top-2/4 left-2/4 w-4/5"
+      >
+        <h2 class="uppercase">
+          Kontakt os for at høre mere om dine muligheder
+        </h2>
+        <Button><span class="skew-x-[40deg]">læs mere</span></Button>
+      </div>
+    </section> -->
   </body>
 </template>
 
