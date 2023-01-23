@@ -79,8 +79,12 @@
               DS/EN ISO 9001:2008 samt ISO 3834-2:2006.
             </p>
           </div>
+
+          <!-- about .about-text:after -->
+
           <!-- Picture here -->
         </div>
+
         <div
           class="relative h-[25rem] z-4 leading-[1.6rem] overflow-hidden w-full md:w-1/2"
         >
@@ -135,36 +139,36 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="scss">
+<style lang="css">
 .about {
   overflow: hidden;
   height: calc(400px + 14rem);
-  .about-text {
-    padding-right: 1.5rem;
-    position: relative;
-    line-height: 1.6;
-    height: 400px;
-    .wrapper {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      left: 56%;
-      width: 87%;
-    }
-    &:after {
-      display: block;
-      position: inherit;
-      height: 0;
-      width: 0;
-      content: "";
-      left: 0;
-      bottom: 0;
-      border-top: 400px solid #fff;
-      border-right: 400px solid transparent;
-      float: right;
-      margin: -48px -424px 0 0;
-      z-index: 5;
-    }
-  }
+}
+.about .about-text {
+  padding-right: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+  height: 400px;
+}
+.about .about-text .wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 56%;
+  width: 87%;
+}
+.about .about-text:after {
+  display: block;
+  position: inherit;
+  height: 0;
+  width: 0;
+  content: "";
+  left: 0;
+  bottom: 0;
+  border-top: 400px solid #fff;
+  border-right: 400px solid transparent;
+  float: right;
+  margin: -48px -424px 0 0;
+  z-index: 5;
 }
 </style>
