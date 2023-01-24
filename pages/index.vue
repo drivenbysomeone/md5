@@ -1,5 +1,4 @@
 <template>
-  <!-- Body -->
   <!--     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -11,14 +10,7 @@
 
   <!-- Services -->
   <body>
-    <Navbar>
-      Logo here
-      <div
-        class="flex justify-between items-center box-border text-base font-normal pl-[100px] bg-[#212a4be6] ml-0 mr-0 pl-[100px] pr-[15px]"
-      >
-        yes
-      </div>
-    </Navbar>
+    <!-- Navbar is implemented already ONCE in Navbar sheet -->
     <section
       class="bg-[#212a4b] text-white grid grid-row lg:grid-cols-4 mx-auto box-border"
     >
@@ -91,7 +83,7 @@
           <img
             src="~/assets/images/mdstainless1.jpg"
             alt="person-welding"
-            class=""
+            class="absolute -bottom-[12%]"
           />
         </div>
       </div>
