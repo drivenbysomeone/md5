@@ -8,6 +8,7 @@ module.exports = {
         md: "768px",
         lg: "991px",
         xl: "1280px",
+        /* NOTE 2nd div in footer uses 1200px, 992px, 768px and 576px as queries*/
       },
     },
 

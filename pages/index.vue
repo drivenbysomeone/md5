@@ -89,9 +89,25 @@
       </div>
     </section>
     <!-- MANGLER -->
-    <section
-      class="relative h-auto max-h-[25rem] overflow-hidden z-19 object-scale-down bg-[#212a4b]"
-    >
+    <section class="relative h-auto max-h-[400px] overflow-hidden z-19">
+      <picture class="-mt-[20%]">
+        <source
+          :srcSet="require('~/assets/images/cnc.jpg?webp')"
+          type="image/webp"
+        />
+        <source
+          :srcSet="require('~/assets/images/cnc.jpg')"
+          type="image/jpeg"
+        />
+        <img
+          :src="require('~/assets/images/cnc.jpg')"
+          alt="MDS Stainless kontakt os"
+          class="lazyload"
+          width="100%"
+        />
+      </picture>
+      class="relative h-auto max-h-[25rem] overflow-hidden z-19
+      object-scale-down bg-[#212a4b]" >
       <div class="text-center container mx-auto px-5 py-10 sm:p-28">
         <div>
           <h2 class="uppercase text-white">
