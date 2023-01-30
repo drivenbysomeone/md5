@@ -11,9 +11,21 @@
     <img
       :src="require('~/assets/images/mdstainless-logo.png')"
       alt="MDS Stainless logo"
-      class="lazyload"
+      class="lazyload h-[40px]"
     />
   </picture>
+
+  <!-- ::After comes here -->
+  <!--  
+    content: "";
+    width: 260%;
+    height: 100%;
+    background: #fff;
+    transform: skew(-45deg,0deg);
+    position: absolute;
+    left: -120%;
+    top: 0;
+    z-index: -10; -->
 </template>
 
 <style>
