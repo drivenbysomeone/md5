@@ -106,9 +106,13 @@
           width="100%"
         />
       </picture>
-      class="relative h-auto max-h-[25rem] overflow-hidden z-19
-      object-scale-down bg-[#212a4b]" >
-      <div class="text-center container mx-auto px-5 py-10 sm:p-28">
+      <!-- Blue overlay here! -->
+      <div
+        class="absolute z-1000 h-full w-full top-0 left-0 bg-[#212a4b] bg-opacity-90"
+      ></div>
+      <div
+        class="absolute translate-x-1/2 translate-y-1/2 w-4/5 top-2/4 left-2/4 text-center text-white z-2000 container mx-auto px-5 py-10 sm:p-28"
+      >
         <div>
           <h2 class="uppercase text-white">
             Kontakt os for at høre mere om dine muligheder
