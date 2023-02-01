@@ -332,6 +332,11 @@ div.tall {
     padding-left: 0px;
     padding-right: 0px;
   }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
 }
 
 /*   padding: 28px; */

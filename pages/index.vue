@@ -10,7 +10,30 @@
 
   <!-- Services -->
   <body>
+    <!-- SECTION HERO -->
+    <section
+      class="h-screen relative pt-[20px] after:bg-[#000] after:content-none after:w-full after:absolute after:block after:top-0 after: left-0 after:opacity-[0.45] after:z-2 lg:h-[80vh]"
+    >
+      <!-- Slideshow  -->
+      <div class="w-full h-full absolute top-0 left-0 z-1">
+        <!-- Slideshow - carousel -->
+        <div class="w-full h full overflow-hidden">
+          <!-- CAROUSEL INNER -->
+          <div class="h.screen">
+            <!-- Carousel item -->
+            <div class="transition ease-out duration-1000 relative h-screen">
+              <!-- Carousel caption -->
+              <div class="right-0 left-0"></div>
+              <!-- images -->
+              <!-- <img src="" alt="image names" class="" /> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Navbar is implemented already ONCE in Navbar sheet -->
+
     <section
       class="bg-[#212a4b] text-white grid grid-row lg:grid-cols-4 mx-auto box-border"
     >
@@ -21,7 +44,7 @@
           rørlængder, med mange forskellige radier.
         </p>
 
-        <Button><span class="skew-x-[40deg]">læs mere</span></Button>
+        <Buttons-nav><span class="skew-x-[40deg]">læs mere</span></Buttons-nav>
       </div>
       <div class="service-component relative -mr-15 -ml-15 p-12 mh-auto">
         <h2 class="uppercase text-xl mb-5 leading-tight">RØROPTRÆK</h2>
@@ -30,7 +53,7 @@
           optræksystem kan vi tilbyde optræk til særdeles fordelagtige priser.
         </p>
 
-        <Button><span class="skew-x-[40deg]">læs mere</span></Button>
+        <Buttons-nav><span class="skew-x-[40deg]">læs mere</span></Buttons-nav>
       </div>
       <div class="service-component relative -mr-15 -ml-15 p-12 mh-auto">
         <h2 class="uppercase text-xl mb-5 leading-tight">ENDEFORMNING</h2>
@@ -39,7 +62,7 @@
           ende dybde på 300mm.
         </p>
 
-        <Button><span class="skew-x-[40deg]">læs mere</span></Button>
+        <Buttons-nav><span class="skew-x-[40deg]">læs mere</span></Buttons-nav>
       </div>
       <div class="service-component relative -mr-15 -ml-15 p-12 mh-auto">
         <h2 class="uppercase text-xl mb-5 leading-tight">AUTOMATSVEJSNING</h2>
@@ -47,7 +70,7 @@
           Vi kan tilbyde Automatisk tig svejsning, med emnevægt op til 250kg, og
           længder op til 3000mm.
         </p>
-        <Button><span class="skew-x-[40deg]">læs mere</span></Button>
+        <Buttons-nav><span class="skew-x-[40deg]">læs mere</span></Buttons-nav>
       </div>
     </section>
     <section class="pt-28 pb-28 w-full">
@@ -90,7 +113,7 @@
     </section>
     <!-- MANGLER -->
     <section class="relative h-auto max-h-[400px] overflow-hidden z-19">
-      <picture class="-mt-[20%]">
+      <picture>
         <source
           :srcSet="require('~/assets/images/cnc.jpg?webp')"
           type="image/webp"
@@ -102,7 +125,7 @@
         <img
           :src="require('~/assets/images/cnc.jpg')"
           alt="MDS Stainless kontakt os"
-          class="lazyload"
+          class="-mt-[20%] h-auto align-middle border-none"
           width="100%"
         />
       </picture>
@@ -111,19 +134,18 @@
         class="absolute z-1000 h-full w-full top-0 left-0 bg-[#212a4b] bg-opacity-90"
       ></div>
       <div
-        class="absolute translate-x-1/2 translate-y-1/2 w-4/5 top-2/4 left-2/4 text-center text-white z-2000 container mx-auto px-5 py-10 sm:p-28"
+        class="absolute transform -translate-x-1/2 -translate-y-1/2 z-2000 w-4/5 top-1/2 left-1/2 py-12 text-white text-center md:text-align-unset"
       >
-        <div>
-          <h2 class="uppercase text-white">
-            Kontakt os for at høre mere om dine muligheder
-          </h2>
+        <h2 class="uppercase text-white">
+          Kontakt os for at høre mere om dine muligheder
+        </h2>
+        <p class="pt-6 mt-0 mb-4"></p>
 
-          <div class="flex flex-row justify-center items-center">
-            <Button class="flex justify-center"
-              ><span class="skew-x-[40deg]">Kontakt os</span>
-            </Button>
-          </div>
-        </div>
+        <Button>
+          <span class="skew-x-[40deg] inline-block font-semibold text-sm"
+            >Kontakt os</span
+          >
+        </Button>
       </div>
     </section>
 
