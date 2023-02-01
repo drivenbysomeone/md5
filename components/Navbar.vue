@@ -9,10 +9,16 @@
     <Logo />
     <!-- NOTE lg is 1024px and NOT the required 991px - customize this! -->
     <div
-      class="flex pl-[100px] lg:bg-[#212a4be6] -lg:mt-[9px] lg:w-full lg:py-0 px-4 -lg:mt-0 lg:z-199 lg:border-transparent lg:border-none lg:bg-transparent lg:after:hidden justify-between items-center"
+      class="flex pl-[100px] lg:bg-[#212a4be6] -lg:mt-[9px] lg:w-full lg:py-0 px-4 -lg:mt-0 lg:z-199 lg:border-transparent lg:border-none lg:bg-transparent lg:after:hidden justify-between items-center leading-[1.875]"
     >
       <!-- HJÆLP Collapse i div? -->
-
+      <div class="pl-[100px]"></div>
+      <div class="inline-block float-right pr-8 relative z-1">
+        <a href="#" class="color-[#fff] p-4 relative z-2"></a>
+        <div
+          class="content-none w-full h-full bg-[#212a4be6] transform -skew-x-45 -skew-y-0 absolute -right-[100px] top-0 z-0"
+        ></div>
+      </div>
       <div
         class="collapse bg-[#212a4ae6] z-10 pt-[50px] pb-2.5 pb h-auto"
       ></div>
