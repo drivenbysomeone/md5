@@ -14,5 +14,7 @@ module.exports = {
 
     extend: {},
   },
-  plugins: [],
+  plugins: {},
+
+  //the new plugin @tailwind/jit doesn't work to make it load faster
 };

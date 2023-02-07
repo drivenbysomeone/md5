@@ -1,4 +1,18 @@
 <template>
+  <!--
+  ============================
+  NOTE it's possible to link styles with: <link rel="stylesheet" href="css/style.css" />
+==============================
+to do this:
+1. create input.css with following
+tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base;
+
+this way regular css/ SCSS can be applied
+-->
+
   <!--     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -12,10 +26,13 @@
   <body>
     <!-- SECTION HERO -->
     <section
-      class="h-screen relative pt-[20px] after:bg-[#000] after:content-none after:w-full after:absolute after:block after:top-0 after: left-0 after:opacity-[0.45] after:z-2 lg:h-[80vh]"
+      class="h-screen relative pt-[20px] after:bg-[#000] after:content-none after:w-full after:absolute after:block after:top-0 after:left-0 after:opacity-[0.45] after:z-2 lg:h-[80vh]"
     >
       <!-- Slideshow  -->
-      <div class="w-full h-full absolute top-0 left-0 z-1">
+      <div
+        class="w-full h-full absolute top-0 left-0 z-1 bg-blue text-darker content-content-text"
+      >
+        dsds
         <!-- Slideshow - carousel -->
         <div class="w-full h full overflow-hidden">
           <!-- CAROUSEL INNER -->
@@ -73,14 +90,16 @@
         <Buttons-nav><span class="skew-x-[40deg]">læs mere</span></Buttons-nav>
       </div>
     </section>
-    <section class="pt-28 pb-28 w-full">
+    <section class="pt-28 pb-28 w-full overflow-hidden">
       <div class="w-full flex items-center md:flex-row flex-col gap-8">
-        <div class="pl-10 leading-relaxed w-full md:w-1/2">
-          <div class="">
+        <div class="leading-relaxed md:w-1/2 relative h-[400px] pr-6">
+          <div
+            class="absolute -translate-y-1/2 -translate-x-1/2 top-[50%] left-[56%] w-[87%]"
+          >
             <h2 class="uppercase mt-0 font-medium">
               alt fra prototype til serieproduktion
             </h2>
-            <p class="mt-0 mb-4 block mb-1">
+            <p class="mt-0 block mb-1">
               Vi er sparingspartner fra prototype til serie produktion, og vores
               mission er at lette vores kunders hverdag. Dette ligger vi i
               hurtige leveringer samt kvalitets arbejde, vi står altid klar til
@@ -96,7 +115,9 @@
           </div>
 
           <!-- about .about-text:after -->
-
+          <div
+            class="inline-block absolute h-0 w-0 left-0 bottom-0 border-t-[400px] border-solid border-white border-r-[400px] border-solid border-white float-right -mt-12 -mr-[424px] mb-0 ml-0 z-5"
+          ></div>
           <!-- Picture here -->
         </div>
 
