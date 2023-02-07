@@ -5,6 +5,7 @@
         <img
           class="w-full h-full object-cover"
           :src="images[currentIndex].image"
+          :src=""
         />
       </div>
     </transition-group>

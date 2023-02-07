@@ -19,9 +19,7 @@
           class="content-none w-full h-full bg-[#212a4be6] transform -skew-x-45 -skew-y-0 absolute -right-[100px] top-0 z-0"
         ></div>
       </div>
-      <div
-        class="collapse bg-[#212a4ae6] z-10 pt-[50px] pb-2.5 pb h-auto"
-      ></div>
+      <div class="collapse bg-[#212a4ae6] z-10 pt-[50px] pb-2.5 h-auto"></div>
     </div>
   </nav>
 </template>

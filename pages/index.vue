@@ -36,7 +36,7 @@ this way regular css/ SCSS can be applied
         <!-- Slideshow - carousel -->
         <div class="w-full h full overflow-hidden">
           <!-- CAROUSEL INNER -->
-          <div class="h.screen">
+          <div class="h-screen">
             <!-- Carousel item -->
             <div class="transition ease-out duration-1000 relative h-screen">
               <!-- Carousel caption -->
