@@ -14,7 +14,6 @@ module.exports = {
 
     extend: {},
   },
-  plugins: {},
-
-  //the new plugin @tailwind/jit doesn't work to make it load faster
+  plugins: [],
 };
+/* the new plugin @tailwind/jit doesn't work to make it load faster.. mode and purge needs to be set as well --> help with purgehttps://v2.tailwindcss.com/docs/just-in-time-mode */

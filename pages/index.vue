@@ -61,7 +61,7 @@ this way regular css/ SCSS can be applied
           rørlængder, med mange forskellige radier.
         </p>
 
-        <Buttons-nav><span class="skew-x-[40deg]">læs mere</span></Buttons-nav>
+        <Button nav><span class="skew-x-[40deg]">læs mere</span></Button>
       </div>
       <div class="service-component relative -mr-15 -ml-15 p-12 mh-auto">
         <h2 class="uppercase text-xl mb-5 leading-tight">RØROPTRÆK</h2>
@@ -70,7 +70,7 @@ this way regular css/ SCSS can be applied
           optræksystem kan vi tilbyde optræk til særdeles fordelagtige priser.
         </p>
 
-        <Buttons-nav><span class="skew-x-[40deg]">læs mere</span></Buttons-nav>
+        <Button nav><span class="skew-x-[40deg]">læs mere</span></Button>
       </div>
       <div class="service-component relative -mr-15 -ml-15 p-12 mh-auto">
         <h2 class="uppercase text-xl mb-5 leading-tight">ENDEFORMNING</h2>
@@ -79,7 +79,7 @@ this way regular css/ SCSS can be applied
           ende dybde på 300mm.
         </p>
 
-        <Buttons-nav><span class="skew-x-[40deg]">læs mere</span></Buttons-nav>
+        <Button nav><span class="skew-x-[40deg]">læs mere</span></Button>
       </div>
       <div class="service-component relative -mr-15 -ml-15 p-12 mh-auto">
         <h2 class="uppercase text-xl mb-5 leading-tight">AUTOMATSVEJSNING</h2>
@@ -87,7 +87,7 @@ this way regular css/ SCSS can be applied
           Vi kan tilbyde Automatisk tig svejsning, med emnevægt op til 250kg, og
           længder op til 3000mm.
         </p>
-        <Buttons-nav><span class="skew-x-[40deg]">læs mere</span></Buttons-nav>
+        <Button nav><span class="skew-x-[40deg]">læs mere</span></Button>
       </div>
     </section>
     <section class="pt-28 pb-28 w-full overflow-hidden">
@@ -162,7 +162,7 @@ this way regular css/ SCSS can be applied
         </h2>
         <p class="pt-6 mt-0 mb-4"></p>
 
-        <Button>
+        <Button contact>
           <span class="skew-x-[40deg] inline-block font-semibold text-sm"
             >Kontakt os</span
           >
