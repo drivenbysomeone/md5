@@ -9,7 +9,7 @@
     <Logo />
     <!-- NOTE lg is 1024px and NOT the required 991px - customize this! -->
     <div
-      class="flex pl-[100px] lg:bg-[#212a4be6] -lg:mt-[9px] lg:w-full lg:py-0 px-4 -lg:mt-0 lg:z-199 lg:border-transparent lg:border-none lg:bg-transparent lg:after:hidden justify-between items-center leading-[1.875]"
+      class="flex pl-[100px] lg:bg-[#212a4be6] -lg:mt-[9px] lg:w-full lg:py-0 px-4 -lg:mt-0 lg:z-199 lg:border-transparent lg:border-none lg:bg-transparent-90 lg:after:hidden justify-between items-center leading-[1.875]"
     >
       <!-- HJÆLP Collapse i div? -->
       <div class="pl-[100px]"></div>

@@ -1,28 +1,11 @@
 <template>
   <!--
   ============================
-  NOTE it's possible to link styles with: <link rel="stylesheet" href="css/style.css" />
-==============================
-to do this:
-1. create input.css with following
-tailwind base;
-@tailwind components;
-@tailwind utilities;
-@layer base;
+  NOTE it's possible to link styles with: <link rel="stylesheet" href="css/style.css" >
 
-this way regular css/ SCSS can be applied
--->
+  <body>
+    <!-- Displays the mobile menu -->
 
-  <!--     font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff; -->
-  <!-- Services -->
-  <!--     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; -->
-
-  <!-- Services -->
   <body>
     <!-- SECTION HERO -->
     <section
@@ -116,7 +99,7 @@ this way regular css/ SCSS can be applied
 
           <!-- about .about-text:after -->
           <div
-            class="inline-block absolute h-0 w-0 left-0 bottom-0 border-t-[400px] border-solid border-white border-r-[400px] border-solid border-white float-right -mt-12 -mr-[424px] mb-0 ml-0 z-5"
+            class="inline-block absolute h-0 w-0 left-0 bottom-0 border-t-[400px] border-solid border-white border-r-[400px] border-white float-right -mt-12 -mr-[424px] mb-0 ml-0 z-5"
           ></div>
           <!-- Picture here -->
         </div>
