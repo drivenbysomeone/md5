@@ -3,15 +3,58 @@
     fixed="top"
     toggleable="lg"
     type="dark"
-    class="flex"
+    class="w-full pb-12 fixed overflow-visible z-10 bg-[#212a4b] bg-opacity-90 h-[96px]"
     :class="{ scrolled }"
   >
-    <Logo />
-    <!-- NOTE lg is 1024px and NOT the required 991px - customize this! -->
-    <div
+    <div class="justify-between items-center flex">
+      <Logo />
+      <div :class="hamburger ? 'bg-blue-100 flex' : 'bg-slate-100 hidden '">
+        <div
+          class="flex absolute inset-0 flex-col basis-1 space-x-20 uppercase w-full bg-[#212a4b] bg-opacity-90 max-h-max space-y-5 font-bold text-white rounded-sm z-10 h-96"
+        >
+          <a href="#" class="text-white hover:text-red">Ydelser</a>
+          <a href="#" class="text-white hover:text-red">Certeficering</a>
+          <a href="#" class="text-white hover:text-red">Galleri</a>
+          <a href="#" class="text-white hover:text-red">Om os</a>
+          <a href="#" class="text-white hover:text-red">Kontakt os</a>
+        </div>
+      </div>
+
+      <div
+        class="lg:flex items-center font-bold text-white leading-4 px-6 md:flex-start bg-[#a2aac4] bg-opacity-0"
+      >
+        <!-- Hamburger menu botton menu -->
+
+        <hamburger
+          id="menu-btn"
+          @click="hamburgerFn()"
+          class="block hamburger lg:hidden focus:outline-none z-20 relative top-7 right-4"
+          type="button"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </hamburger>
+      </div>
+    </div>
+
+    <!-- Displays mobile menu -->
+
+    <div id="menu" class="hidden p-6 rounded-lg rgba(33,42,75,.9) z-100">
+      <div
+        class="flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm"
+      >
+        <a href="" class="w-full text-center">Ydelser</a>
+        <a href="" class="w-full text-center">Certeficering</a>
+        <a href="" class="w-full text-center">Galleri</a>
+        <a href="" class="w-full text-center">Om os</a>
+        <a href="" class="w-full text-center">Kontakt os</a>
+      </div>
+    </div>
+
+    <!--     <div
       class="flex pl-[100px] lg:bg-[#212a4be6] -lg:mt-[9px] lg:w-full lg:py-0 px-4 -lg:mt-0 lg:z-199 lg:border-transparent lg:border-none lg:bg-transparent-90 lg:after:hidden justify-between items-center leading-[1.875]"
     >
-      <!-- HJÆLP Collapse i div? -->
       <div class="pl-[100px]"></div>
       <div class="inline-block float-right pr-8 relative z-1">
         <a href="#" class="color-[#fff] p-4 relative z-2"></a>
@@ -21,6 +64,7 @@
       </div>
       <div class="collapse bg-[#212a4ae6] z-10 pt-[50px] pb-2.5 h-auto"></div>
     </div>
+  </nav> -->
   </nav>
 </template>
 
@@ -37,6 +81,7 @@ nav .right-bg {
   display: inline-block;
   float: right;
   padding-right: 2em;
+
   position: relative;
   z-index: 1;
 }
@@ -180,6 +225,53 @@ nav.scrolled .navbar-brand:after {
     top: -8px;
   }
 }
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background: #9c9aa6;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
 </style>
 
 <script>
@@ -188,6 +280,7 @@ export default {
   data() {
     return {
       scrolled: false,
+      hamburger: false,
     };
   },
   mounted() {
@@ -197,6 +290,9 @@ export default {
   methods: {
     handleScroll() {
       this.scrolled = $nuxt.$route.name != "index" || window.scrollY > 0;
+    },
+    hamburgerFn() {
+      this.hamburger = !this.hamburger;
     },
   },
   watch: {

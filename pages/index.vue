@@ -1,45 +1,42 @@
 <template>
-  <!--
-  ============================
-  NOTE it's possible to link styles with: <link rel="stylesheet" href="css/style.css" >
-
-  <body>
-    <!-- Displays the mobile menu -->
-
-  <body>
+  <!-- Navbar is implemented already ONCE in Navbar.vue -->
+  <div>
     <!-- SECTION HERO -->
-    <section
-      class="h-screen relative pt-[20px] after:bg-[#000] after:content-none after:w-full after:absolute after:block after:top-0 after:left-0 after:opacity-[0.45] after:z-2 lg:h-[80vh]"
-    >
-      <!-- Slideshow  -->
-      <div
-        class="w-full h-full absolute top-0 left-0 z-1 bg-blue text-darker content-content-text"
-      >
-        dsds
-        <!-- Slideshow - carousel -->
-        <div class="w-full h full overflow-hidden">
-          <!-- CAROUSEL INNER -->
-          <div class="h-screen">
-            <!-- Carousel item -->
-            <div class="transition ease-out duration-1000 relative h-screen">
-              <!-- Carousel caption -->
-              <div class="right-0 left-0"></div>
-              <!-- images -->
-              <!-- <img src="" alt="image names" class="" /> -->
-            </div>
-          </div>
+    <section class="relative lg:h-[80vh]">
+      <!-- Slideshow arrows -->
+      <div class="relative slide text-5xl">
+        <!-- Slide arrows  -->
+      </div>
+      <div class="carousel-inner relative overflow-hidden w-full">
+        <div
+          v-for="(img, i) in images"
+          :id="`slide-${i}`"
+          :key="i"
+          :class="`${active === i ? 'active' : 'left-full'}`"
+          class="carousel-item inset-0 relative w-full transform transition-all duration-500 ease-in-out"
+        >
+          <img class="block w-full" :src="img" alt="First slide" />
+
+          <!-- Arrow left -->
+          <div
+            @click="sliderPrev()"
+            class="absolute top-1/2 left-4 h-0 w-0 border-x-[22px] border-x-transparent border-b-[22px] border-b-[#212a4b] -rotate-90 cursor-pointer"
+          ></div>
+          <!-- Arrow right -->
+          <div
+            @click="sliderNext()"
+            class="absolute top-1/2 right-4 h-0 w-0 border-x-[22px] border-x-transparent border-b-[22px] border-b-[#212a4b] rotate-90 border-opacity-80 cursor-pointer"
+          ></div>
         </div>
       </div>
     </section>
 
-    <!-- Navbar is implemented already ONCE in Navbar sheet -->
-
     <section
       class="bg-[#212a4b] text-white grid grid-row lg:grid-cols-4 mx-auto box-border"
     >
-      <div class="service-component relative -mr-15 -ml-15 p-12 mh-auto">
+      <div class="service-component relative -mr-15 -ml-15 p-12 mh-auto top-0">
         <h2 class="uppercase text-xl mb-5 leading-tight">Rørbukning</h2>
-        <p class="block text-[#d1d0da] text-[15px] mb-[50px]">
+        <p class="block text-[#d1d0da] text-base mb-[50px]">
           Vi udfører rørbukning i rustfri stål, fra Ø10-Ø90mm og op til 6000mm
           rørlængder, med mange forskellige radier.
         </p>
@@ -99,7 +96,7 @@
 
           <!-- about .about-text:after -->
           <div
-            class="inline-block absolute h-0 w-0 left-0 bottom-0 border-t-[400px] border-solid border-white border-r-[400px] border-white float-right -mt-12 -mr-[424px] mb-0 ml-0 z-5"
+            class="inline-block absolute h-0 w-0 left-0 bottom-0 border-t-[400px] border-solid border-white border-r-[400px] float-right -mt-12 -mr-[424px] mb-0 ml-0 z-5"
           ></div>
           <!-- Picture here -->
         </div>
@@ -152,32 +149,69 @@
         </Button>
       </div>
     </section>
-
-    <!--     <section
-      class="relative h-auto max-h-[25rem] overflow-hidden z-19 object-scale-down"
-    >
-      <div class="absolute block z-1000 h-full top-0 left-0 bg-[#212a4b]"></div>
-      <div
-        class="absolute z-2000 -translate-x-2/4 -translate-y-2/4 top-2/4 left-2/4 w-4/5"
-      >
-        <h2 class="uppercase">
-          Kontakt os for at høre mere om dine muligheder
-        </h2>
-        <Button><span class="skew-x-[40deg]">læs mere</span></Button>
-      </div>
-    </section> -->
-  </body>
+  </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import Slideshow from "~/components/Slideshow.vue";
 
 export default Vue.extend({
   name: "IndexPage",
+  data: () => ({
+    images: [
+      "_nuxt/assets/images/mdstainless1.jpg",
+      "https://picsum.photos/id/238/1024/800",
+      "https://picsum.photos/id/239/1024/800",
+    ],
+    active: 0,
+  }),
+  mounted() {
+    let i = 0;
+    //   setInterval(() => {
+    //     if (i > this.images.length - 1) {
+    //       i = 0;
+    //     }
+    //     this.active = i;
+    //     i++;
+    //   }, 4000);
+  },
+  methods: {
+    sliderPrev() {
+      if (this.active === 0) {
+        this.active = this.images.length - 1;
+      } else {
+        this.active--;
+      }
+    },
+    sliderNext() {
+      if (this.active === this.images.length - 1) {
+        this.active = 0;
+      } else {
+        this.active++;
+      }
+    },
+  },
 });
 </script>
 
 <style lang="css">
+.left-full {
+  left: -100%;
+}
+
+.carousel-item {
+  float: left;
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-right: -100%;
+  backface-visibility: hidden;
+}
+
+.carousel-item.active {
+  left: 0;
+}
 .about {
   overflow: hidden;
   height: calc(400px + 14rem);
@@ -203,10 +237,60 @@ export default Vue.extend({
   content: "";
   left: 0;
   bottom: 0;
-  border-top: 400px solid #fff;
+  border-top: 400px solid #ffffff;
   border-right: 400px solid transparent;
   float: right;
   margin: -48px -424px 0 0;
   z-index: 5;
 }
+
+.arrows {
+  font-size: 3.125em;
+  position: relative;
+  width: 100%;
+}
+
+.arrows .left {
+  position: absolute;
+  color: white;
+  bottom: 1em;
+  left: 0.4em;
+  border: 0.02em solid #b10909;
+  border-radius: 0.14em;
+  padding: 0em 0.4em 0.2em;
+  background: #f2b8a2;
+  transition: 0.3s linear;
+}
+
+/* .arrows .right {
+  position: absolute;
+  color: white;
+  bottom: 1em;
+  right: 0.4em;
+  border: 0.02em solid #ad0808;
+  border-radius: 0.14em;
+  padding: 0em 0.4em 0.2em;
+  background: #f2b8a2;
+  transition: 0.3s linear;
+}
+.arrows .tip-left {
+  position: absolute;
+
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #f2b8a2;
+  transform: rotate(35deg);
+}
+
+.arrows .tip-right {
+  position: absolute;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #f2b8a2;
+  transform: rotate(-35deg);
+}
+
+.test {
+  font-size: 10rem;
+} */
 </style>
