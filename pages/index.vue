@@ -2,12 +2,12 @@
   <!-- Navbar is implemented already ONCE in Navbar.vue -->
   <div>
     <!-- SECTION HERO -->
-    <section class="relative lg:h-[80vh]">
+    <section class="relative lg:h-[80vh] h-full">
       <!-- Slideshow arrows -->
       <div class="relative slide text-5xl">
         <!-- Slide arrows  -->
       </div>
-      <div class="carousel-inner relative overflow-hidden w-full">
+      <div class="carousel-inner">
         <div
           v-for="(img, i) in images"
           :id="`slide-${i}`"
@@ -15,24 +15,41 @@
           :class="`${active === i ? 'active' : 'left-full'}`"
           class="carousel-item inset-0 relative w-full transform transition-all duration-500 ease-in-out"
         >
-          <img class="block w-full" :src="img" alt="First slide" />
+          <div
+            class="h-[80vh] bg-cover"
+            :style="`background-image:url(${img})`"
+          >
+            ``
+          </div>
+          <!-- <img class="" :src="img" alt="First slide" /> -->
 
           <!-- Arrow left -->
           <div
             @click="sliderPrev()"
-            class="absolute top-1/2 left-4 h-0 w-0 border-x-[22px] border-x-transparent border-b-[22px] border-b-[#212a4b] -rotate-90 cursor-pointer"
+            class="absolute top-1/2 left-4 border-x-[22px] border-x-transparent border-b-[22px] border-b-[#212a4b] -rotate-90 cursor-pointer"
           ></div>
           <!-- Arrow right -->
           <div
             @click="sliderNext()"
-            class="absolute top-1/2 right-4 h-0 w-0 border-x-[22px] border-x-transparent border-b-[22px] border-b-[#212a4b] rotate-90 border-opacity-80 cursor-pointer"
+            class="absolute top-1/2 right-4 border-x-[22px] border-x-transparent border-b-[22px] border-b-[#212a4b] rotate-90 border-opacity-80 cursor-pointer"
           ></div>
+          <div
+            class="absolute top-1/2 left-20 text-white font-semibold text-5xl uppercase text-left w-2/3"
+          >
+            Total Leverandør indenfor rusrfti rørbearbejdning
+            <p class="pt-6 m-0"></p>
+            <Button contact>
+              <span class="skew-x-[40deg] inline-block font-semibold text-base"
+                >Kontakt os</span
+              >
+            </Button>
+          </div>
         </div>
       </div>
     </section>
 
     <section
-      class="bg-[#212a4b] text-white grid grid-row lg:grid-cols-4 mx-auto box-border"
+      class="bg-[#212a4b] text-white grid grid-row lg:grid-cols-4 mx-auto box-border relative"
     >
       <div class="service-component relative -mr-15 -ml-15 p-12 mh-auto top-0">
         <h2 class="uppercase text-xl mb-5 leading-tight">Rørbukning</h2>
@@ -70,50 +87,53 @@
         <Button nav><span class="skew-x-[40deg]">læs mere</span></Button>
       </div>
     </section>
-    <section class="pt-28 pb-28 w-full overflow-hidden">
-      <div class="w-full flex items-center md:flex-row flex-col gap-8">
-        <div class="leading-relaxed md:w-1/2 relative h-[400px] pr-6">
+    <section class="about py-12">
+      <div class="w-full pr-[15px] pl-[15px] mr-auto ml-auto">
+        <div class="flex flex-row flex-wrap -mr-15px -ml-15px">
           <div
-            class="absolute -translate-y-1/2 -translate-x-1/2 top-[50%] left-[56%] w-[87%]"
+            class="py-[48px] pl-[15px] pr[24px] w-full flex flex-wrap items-center md:flex-row flex-col gap-0"
           >
-            <h2 class="uppercase mt-0 font-medium">
-              alt fra prototype til serieproduktion
-            </h2>
-            <p class="mt-0 block mb-1">
-              Vi er sparingspartner fra prototype til serie produktion, og vores
-              mission er at lette vores kunders hverdag. Dette ligger vi i
-              hurtige leveringer samt kvalitets arbejde, vi står altid klar til
-              at hjælpe vores kunder med hurtige løsninger og haste leveringer.
-              Som underleverandør til mejeri- & vindmølleindustrien ved vi at
-              pris, leveringstid samt kvalitet er det vigtigste, Derfor er vores
-              svejsepersonale blevet certificeret efter gældende standarder, og
-              vi har erhvervet os WPQR`r og WPS`r til en lang række svejsesøm,
-              så vi dækker et stort område indenfor rustfri rørsvejsning. MDS
-              Stainless ApS har i foråret 2016 implementeret certificeringerne
-              DS/EN ISO 9001:2008 samt ISO 3834-2:2006.
-            </p>
+            <div class="leading-relaxed md:w-1/2 relative h-[400px] pr-6">
+              <div
+                class="absolute -translate-y-1/2 -translate-x-1/2 top-[50%] left-[56%] w-[87%]"
+              >
+                <h2 class="uppercase mt-0 font-medium">
+                  alt fra prototype til serieproduktion
+                </h2>
+                <p class="mt-0 mb-0 relative">
+                  Vi er sparingspartner fra prototype til serie produktion, og
+                  vores mission er at lette vores kunders hverdag. Dette ligger
+                  vi i hurtige leveringer samt kvalitets arbejde, vi står altid
+                  klar til at hjælpe vores kunder med hurtige løsninger og haste
+                  leveringer. Som underleverandør til mejeri- &
+                  vindmølleindustrien ved vi at pris, leveringstid samt kvalitet
+                  er det vigtigste, Derfor er vores svejsepersonale blevet
+                  certificeret efter gældende standarder, og vi har erhvervet os
+                  WPQR`r og WPS`r til en lang række svejsesøm, så vi dækker et
+                  stort område indenfor rustfri rørsvejsning. MDS Stainless ApS
+                  har i foråret 2016 implementeret certificeringerne DS/EN ISO
+                  9001:2008 samt ISO 3834-2:2006.
+                </p>
+              </div>
+            </div>
+
+            <div class="triangle">
+              <!-- Picture here -->
+              <div class="p-0 w-1/2 overflow-hidden relative">
+                <img
+                  src="~/assets/images/mdstainless1.jpg"
+                  alt="person-welding"
+                  class="absolute -bottom-[12%]"
+                />
+                <!-- Fancy triangle - see CSS -->
+              </div>
+            </div>
           </div>
-
-          <!-- about .about-text:after -->
-          <div
-            class="inline-block absolute h-0 w-0 left-0 bottom-0 border-t-[400px] border-solid border-white border-r-[400px] float-right -mt-12 -mr-[424px] mb-0 ml-0 z-5"
-          ></div>
-          <!-- Picture here -->
-        </div>
-
-        <div
-          class="relative h-[25rem] z-4 leading-[1.6rem] overflow-hidden w-full md:w-1/2"
-        >
-          <img
-            src="~/assets/images/mdstainless1.jpg"
-            alt="person-welding"
-            class="absolute -bottom-[12%]"
-          />
         </div>
       </div>
     </section>
     <!-- MANGLER -->
-    <section class="relative h-auto max-h-[400px] overflow-hidden z-19">
+    <section class="relative h-auto max-h-[400px] overflow-hidden">
       <picture>
         <source
           :srcSet="require('~/assets/images/cnc.jpg?webp')"
@@ -132,49 +152,48 @@
       </picture>
       <!-- Blue overlay here! -->
       <div
-        class="absolute z-1000 h-full w-full top-0 left-0 bg-[#212a4b] bg-opacity-90"
+        class="absolute z-1000 h-full w-full inset-0 bg-[#212a4b] bg-opacity-90"
       ></div>
       <div
-        class="absolute transform -translate-x-1/2 -translate-y-1/2 z-2000 w-4/5 top-1/2 left-1/2 py-12 text-white text-center md:text-align-unset"
+        class="absolute transform -translate-x-1/2 -translate-y-32 z-2000 w-4/5 top-1/2 left-1/2 py-12 text-white text-center md:text-align-unset content-center"
       >
         <h2 class="uppercase text-white">
-          Kontakt os for at høre mere om dine muligheder
+          Kontakt os for at høre mere om dine muligheder,
         </h2>
         <p class="pt-6 mt-0 mb-4"></p>
-
-        <Button contact>
-          <span class="skew-x-[40deg] inline-block font-semibold text-sm"
-            >Kontakt os</span
-          >
-        </Button>
+        <a href="#">
+          <Button contact class="relative -right-1/3 bottom-0">
+            <span class="skew-x-[40deg] font-semibold text-base"
+              >Kontakt os</span
+            >
+          </Button>
+        </a>
       </div>
     </section>
   </div>
 </template>
 
 <script lang="ts">
+import { assertTSAnyKeyword, classProperty } from "@babel/types";
 import Vue from "vue";
 import Slideshow from "~/components/Slideshow.vue";
 
 export default Vue.extend({
   name: "IndexPage",
   data: () => ({
-    images: [
-      "_nuxt/assets/images/mdstainless1.jpg",
-      "https://picsum.photos/id/238/1024/800",
-      "https://picsum.photos/id/239/1024/800",
-    ],
+    images: ["mdstainless1.jpg", "bw_mds.jpg", "rustfrit2.jpg"],
     active: 0,
   }),
+
   mounted() {
     let i = 0;
-    //   setInterval(() => {
-    //     if (i > this.images.length - 1) {
-    //       i = 0;
-    //     }
-    //     this.active = i;
-    //     i++;
-    //   }, 4000);
+    setInterval(() => {
+      if (i > this.images.length - 1) {
+        i = 0;
+      }
+      this.active = i;
+      i++;
+    }, 4000);
   },
   methods: {
     sliderPrev() {
@@ -211,6 +230,16 @@ export default Vue.extend({
 
 .carousel-item.active {
   left: 0;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+
+  object-fit: fill;
 }
 .about {
   overflow: hidden;
@@ -262,35 +291,19 @@ export default Vue.extend({
   transition: 0.3s linear;
 }
 
-/* .arrows .right {
-  position: absolute;
-  color: white;
-  bottom: 1em;
-  right: 0.4em;
-  border: 0.02em solid #ad0808;
-  border-radius: 0.14em;
-  padding: 0em 0.4em 0.2em;
-  background: #f2b8a2;
-  transition: 0.3s linear;
-}
-.arrows .tip-left {
-  position: absolute;
+.triangle {
+  position: inherit;
+  height: 0;
+  width: 0;
+  content: "";
+  left: 0;
+  bottom: 0;
+  border-top: 400px solid #ffffff;
+  border-right: 400px solid transparent;
+  float: right;
+  margin: -48px -424px 0 0;
+  z-index: 5;
 
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 20px solid #f2b8a2;
-  transform: rotate(35deg);
+  /*  leading-[1.6rem] w-0 h-0 md:w-1/2 sm:none z-400 bg-white left-0 bottom-0 border-white border-l-[150px] border-t-[96px] border-t-white-500 border-r-[70px] border-r-transparent */
 }
-
-.arrows .tip-right {
-  position: absolute;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 20px solid #f2b8a2;
-  transform: rotate(-35deg);
-}
-
-.test {
-  font-size: 10rem;
-} */
 </style>

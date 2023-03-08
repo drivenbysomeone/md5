@@ -40,7 +40,7 @@ h1 {
   text-transform: uppercase;
 }
 
-/* ALL BELOW has been converted from SCSS to */
+/* ALL BELOW has been converted from SCSS to css */
 
 *,
 *::before,

@@ -3,46 +3,45 @@
     fixed="top"
     toggleable="lg"
     type="dark"
-    class="w-full pb-12 fixed overflow-visible z-10 bg-[#212a4b] bg-opacity-90 h-[96px]"
+    class="w-full fixed overflow-visible z-10 bg-[#212a4b] bg-opacity-90 h-[96px]"
     :class="{ scrolled }"
   >
     <div class="justify-between items-center flex">
       <Logo />
       <div :class="hamburger ? 'bg-blue-100 flex' : 'bg-slate-100 hidden '">
         <div
-          class="flex absolute inset-0 flex-col basis-1 space-x-20 uppercase w-full bg-[#212a4b] bg-opacity-90 max-h-max space-y-5 font-bold text-white rounded-sm z-10 h-96"
+          class="flex absolute top-[96px] left-0 flex-col basis-0 space-x-11 uppercase w-full bg-[#212a4b] bg-opacity-90 font-medium text-[#ffffffcc] rounded-sm z-20 h-[300px]"
         >
-          <a href="#" class="text-white hover:text-red">Ydelser</a>
-          <a href="#" class="text-white hover:text-red">Certeficering</a>
-          <a href="#" class="text-white hover:text-red">Galleri</a>
-          <a href="#" class="text-white hover:text-red">Om os</a>
-          <a href="#" class="text-white hover:text-red">Kontakt os</a>
+          <a href="#" class="text-[#ffffffcc] hover:text-red ml-11">Ydelser</a>
+          <a href="#" class="text-[#ffffffcc] hover:text-red">Certeficering</a>
+          <a href="#" class="text-[#ffffffcc] hover:text-red">Galleri</a>
+          <a href="#" class="text-[#ffffffcc] hover:text-red">Om os</a>
+          <a href="#" class="text-[#ffffffcc] hover:text-red">Kontakt os</a>
         </div>
       </div>
 
-      <div
-        class="lg:flex items-center font-bold text-white leading-4 px-6 md:flex-start bg-[#a2aac4] bg-opacity-0"
-      >
-        <!-- Hamburger menu botton menu -->
+      <!-- Hamburger menu botton menu -->
 
-        <hamburger
-          id="menu-btn"
-          @click="hamburgerFn()"
-          class="block hamburger lg:hidden focus:outline-none z-20 relative top-7 right-4"
-          type="button"
-        >
-          <span class="hamburger-top"></span>
-          <span class="hamburger-middle"></span>
-          <span class="hamburger-bottom"></span>
-        </hamburger>
-      </div>
+      <hamburger
+        id="menu-btn"
+        @click="hamburgerFn()"
+        class="block hamburger lg:hidden focus:outline-none z-20 relative top-7 right-4"
+        type="button"
+      >
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </hamburger>
     </div>
 
     <!-- Displays mobile menu -->
 
-    <div id="menu" class="hidden p-6 rounded-lg rgba(33,42,75,.9) z-100">
+    <div
+      id="menu"
+      class="space-y-4 hidden p-4 rounded-lg rgba(33,42,75,.9) z-100"
+    >
       <div
-        class="flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm"
+        class="flex-col items-center justify-center w-full text-white rounded-sm"
       >
         <a href="" class="w-full text-center">Ydelser</a>
         <a href="" class="w-full text-center">Certeficering</a>
@@ -196,7 +195,7 @@ nav.scrolled .navbar-brand:after {
   font-size: 15px;
   font-weight: 500;
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: #ffffffcc !important;
   position: relative;
   display: block;
 }

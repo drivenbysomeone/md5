@@ -1,7 +1,7 @@
 <template>
-  <footer class="relative absolute inset-x-0 overflow-hidden pt-6">
+  <footer class="absolute inset-x-0 overflow-hidden pt-6">
     <div
-      class="md:w-full pr-4 pl-4 text-center py-6 pb-6 mr-auto ml-auto w-full pl-[15px] pr-[15px] xl:max-w-6xl lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540]"
+      class="md:w-full pl-4 text-center py-6 pb-6 mr-auto ml-auto w-full pl- pr-[15px] xl:max-w-6xl lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540]"
     >
       <div class="flex flex-row flex-wrap -mr-[15px] -ml-[15px]">
         <div class="md:w-full pr-4 pl-4">
@@ -87,13 +87,16 @@
         </div>
       </div>
     </div>
-    <!-- Banner here -->
-    <div class="absolute overflow-hidden bottom-0 right-0">
-      <picture class="NuxtLogo">
+    <!-- Banner container here -->
+    <div class="absolute overflow-hidden bottom-0 right-0"></div>
+    <!--  -->
+    <div class="flex justify-center m-0 p-0 h-24">
+      <picture class="NuxtLogo h-16 m-0">
         <img
           src="~/assets/images/logo_kræftensbekæmpelse.png"
           alt="logo kræftens bekæmpelse"
           width="w-[300px]"
+          class="relative scale-75 -top-14"
         />
       </picture>
     </div>

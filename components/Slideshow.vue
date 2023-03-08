@@ -2,10 +2,7 @@
   <div class="absolute h-full w-full">
     <transition-group name="fade" tag="div" class="h-full">
       <div v-for="i in [currentIndex]" :key="i" class="h-full">
-        <img
-          class="w-full h-full object-cover"
-          :src="images[currentIndex].image"
-        />
+        <img class="w-full h-full object-cover" :src="images[currentIndex]" />
       </div>
     </transition-group>
   </div>
@@ -18,7 +15,8 @@ import { Vue, Component, Prop } from "vue-property-decorator";
   components: {},
 })
 export default class Slideshow extends Vue {
-  @Prop({ required: true }) images: { image: string; image_alt: string }[];
+  // @Prop({ required: true }) images: { image: string; image_alt: string }[];
+  @Prop({ required: true }) images: string[];
 
   currentIndex = 0;
 
