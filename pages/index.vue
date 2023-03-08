@@ -34,7 +34,7 @@
             class="absolute top-1/2 right-4 border-x-[22px] border-x-transparent border-b-[22px] border-b-[#212a4b] rotate-90 border-opacity-80 cursor-pointer"
           ></div>
           <div
-            class="absolute top-1/2 left-20 text-white font-semibold text-5xl uppercase text-left w-2/3"
+            class="absolute top-1/3 left-20 text-white font-semibold text-5xl uppercase text-left w-2/3"
           >
             Total Leverandør indenfor rusrfti rørbearbejdning
             <p class="pt-6 m-0"></p>
@@ -80,59 +80,57 @@
       </div>
       <div class="service-component relative -mr-15 -ml-15 p-12 mh-auto">
         <h2 class="uppercase text-xl mb-5 leading-tight">AUTOMATSVEJSNING</h2>
-        <p class="block text-[#d1d0da] text-[15px] mb-[50px]">
+        <p class="block text-[#d1d0da] text-[15px] mb-[50px] leading-6">
           Vi kan tilbyde Automatisk tig svejsning, med emnevægt op til 250kg, og
           længder op til 3000mm.
         </p>
         <Button nav><span class="skew-x-[40deg]">læs mere</span></Button>
       </div>
     </section>
-    <section class="about py-12">
-      <div class="w-full pr-[15px] pl-[15px] mr-auto ml-auto">
-        <div class="flex flex-row flex-wrap -mr-15px -ml-15px">
+    <section class="py-4 md:pt-28 md:pb-28 w-full overflow-hidden">
+      <div
+        class="flex flex-wrap flex-col md:flex-row my-auto px-[15px] -mx-[15px]"
+      >
+        <div class="md:w-1/2 pl-[24px] pr-[24px] py-5 my-12 h-[400px] relative">
+          <h2 class="uppercase mt-0 font-medium">
+            alt fra prototype til serieproduktion
+          </h2>
+          <p class="mt-0 mb-0 relative">
+            Vi er sparingspartner fra prototype til serie produktion, og vores
+            mission er at lette vores kunders hverdag. Dette ligger vi i hurtige
+            leveringer samt kvalitets arbejde, vi står altid klar til at hjælpe
+            vores kunder med hurtige løsninger og haste leveringer. Som
+            underleverandør til mejeri- & vindmølleindustrien ved vi at pris,
+            leveringstid samt kvalitet er det vigtigste, Derfor er vores
+            svejsepersonale blevet certificeret efter gældende standarder, og vi
+            har erhvervet os WPQR`r og WPS`r til en lang række svejsesøm, så vi
+            dækker et stort område indenfor rustfri rørsvejsning. MDS Stainless
+            ApS har i foråret 2016 implementeret certificeringerne DS/EN ISO
+            9001:2008 samt ISO 3834-2:2006.
+          </p>
+        </div>
+        <div
+          class="w-full md:w-1/2 relative overflow-hidden m-auto -bottom-5 right-0 sm:hidden sm:invisible md:block md:visible"
+        >
+          <!-- Triangle -->
           <div
-            class="py-[48px] pl-[15px] pr[24px] w-full flex flex-wrap items-center md:flex-row flex-col gap-0"
-          >
-            <div class="leading-relaxed md:w-1/2 relative h-[400px] pr-6">
-              <div
-                class="absolute -translate-y-1/2 -translate-x-1/2 top-[50%] left-[56%] w-[87%]"
-              >
-                <h2 class="uppercase mt-0 font-medium">
-                  alt fra prototype til serieproduktion
-                </h2>
-                <p class="mt-0 mb-0 relative">
-                  Vi er sparingspartner fra prototype til serie produktion, og
-                  vores mission er at lette vores kunders hverdag. Dette ligger
-                  vi i hurtige leveringer samt kvalitets arbejde, vi står altid
-                  klar til at hjælpe vores kunder med hurtige løsninger og haste
-                  leveringer. Som underleverandør til mejeri- &
-                  vindmølleindustrien ved vi at pris, leveringstid samt kvalitet
-                  er det vigtigste, Derfor er vores svejsepersonale blevet
-                  certificeret efter gældende standarder, og vi har erhvervet os
-                  WPQR`r og WPS`r til en lang række svejsesøm, så vi dækker et
-                  stort område indenfor rustfri rørsvejsning. MDS Stainless ApS
-                  har i foråret 2016 implementeret certificeringerne DS/EN ISO
-                  9001:2008 samt ISO 3834-2:2006.
-                </p>
-              </div>
-            </div>
+            class="absolute rotate-[45deg] h-[220%] w-[60%] bg-white -top-26 bottom-0 -left-10 right-0"
+          ></div>
+          <div
+            class="absolute bg-white bottom-0 left-0 right-0 h-[42px] w-full overflow-hidden"
+          ></div>
 
-            <div class="triangle">
-              <!-- Picture here -->
-              <div class="p-0 w-1/2 overflow-hidden relative">
-                <img
-                  src="~/assets/images/mdstainless1.jpg"
-                  alt="person-welding"
-                  class="absolute -bottom-[12%]"
-                />
-                <!-- Fancy triangle - see CSS -->
-              </div>
-            </div>
-          </div>
+          <!-- Picture here -->
+          <img
+            src="~/assets/images/mdstainless1.jpg"
+            alt=""
+            class="hidden sm:hidden md:block md:visible"
+          />
         </div>
       </div>
     </section>
     <!-- MANGLER -->
+
     <section class="relative h-auto max-h-[400px] overflow-hidden">
       <picture>
         <source

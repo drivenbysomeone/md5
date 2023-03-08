@@ -9,7 +9,7 @@
         disabled,
       'flex bg-white text-[#212a4b] hover:text-white font-semibold uppercase cursor-pointer rounded-none mr-15 -skew-x-[40deg] ease-in transition hover:border-white hover:border-solid hover:border-2 hover:bg-opacity-0 duration-150 justify-center md:px-12 px-6 py-1 md:py-2 absolute bottom-[18px] right-[12%] mb-[30px] mr-[15px] border-2':
         nav,
-      'flex align-middle text-center font-semibold no-underline btn-white md:px-12 md:py-2 bg-gray-600 text-white hover:text-white hover:bg-gray-700 leading-tight':
+      'flex align-middle text-center font-semibold no-underline btn-white md:px-12 md:py-2 bg-gray-600 text-white hover:text-white hover:bg-gray-700 leading-tight py-1 px-6 ':
         contact,
     }"
     :type="type"

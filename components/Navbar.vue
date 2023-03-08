@@ -3,12 +3,19 @@
     fixed="top"
     toggleable="lg"
     type="dark"
-    class="w-full fixed overflow-visible z-10 bg-[#212a4b] bg-opacity-90 h-[96px]"
+    class="w-full fixed overflow-visible z-10 bg-[#212a4b] bg-opacity-90 h-[96px] transition duration-500 ease"
     :class="{ scrolled }"
   >
-    <div class="justify-between items-center flex">
+    <div class="justify-between items-center flex transition duration-500 ease">
       <Logo />
-      <div :class="hamburger ? 'bg-blue-100 flex' : 'bg-slate-100 hidden '">
+      <div
+        class=""
+        :class="
+          hamburger
+            ? 'bg-blue-100 flex transition duration-500 ease-in '
+            : 'bg-slate-100 hidden transition duration-500 ease-out '
+        "
+      >
         <div
           class="flex absolute top-[96px] left-0 flex-col basis-0 space-x-11 uppercase w-full bg-[#212a4b] bg-opacity-90 font-medium text-[#ffffffcc] rounded-sm z-20 h-[300px]"
         >
@@ -70,6 +77,7 @@
 <style>
 nav {
   transition: all 1s ease-out;
+
   height: 60px;
   line-height: 60px;
 }
