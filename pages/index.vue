@@ -91,7 +91,9 @@
       <div
         class="flex flex-wrap flex-col md:flex-row my-auto px-[15px] -mx-[15px]"
       >
-        <div class="md:w-1/2 pl-[24px] pr-[24px] py-5 my-12 h-[400px] relative">
+        <div
+          class="md:w-1/2 pl-[15px] pr-[24px] py-12 h-[400px] relative mb-4 mt-0 top-auto"
+        >
           <h2 class="uppercase mt-0 font-medium">
             alt fra prototype til serieproduktion
           </h2>
