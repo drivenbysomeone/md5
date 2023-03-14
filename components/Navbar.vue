@@ -19,7 +19,9 @@
         <div
           class="flex absolute top-[96px] left-0 flex-col basis-0 space-x-11 uppercase w-full bg-[#212a4b] bg-opacity-90 font-medium text-[#ffffffcc] rounded-sm z-20 h-[300px]"
         >
-          <a href="#" class="text-[#ffffffcc] hover:text-red ml-11">Ydelser</a>
+          <a href="/ydelser/" class="text-[#ffffffcc] hover:text-red ml-11"
+            >Ydelser</a
+          >
           <a href="#" class="text-[#ffffffcc] hover:text-red">Certeficering</a>
           <a href="#" class="text-[#ffffffcc] hover:text-red">Galleri</a>
           <a href="#" class="text-[#ffffffcc] hover:text-red">Om os</a>

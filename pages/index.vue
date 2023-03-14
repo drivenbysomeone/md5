@@ -38,11 +38,14 @@
           >
             Total Leverandør indenfor rusrfti rørbearbejdning
             <p class="pt-6 m-0"></p>
-            <Button contact>
-              <span class="skew-x-[40deg] inline-block font-semibold text-base"
-                >Kontakt os</span
-              >
-            </Button>
+            <a href="/kontakt/">
+              <Button contact>
+                <span
+                  class="skew-x-[40deg] inline-block font-semibold text-base"
+                  >Kontakt os</span
+                >
+              </Button>
+            </a>
           </div>
         </div>
       </div>
@@ -57,8 +60,9 @@
           Vi udfører rørbukning i rustfri stål, fra Ø10-Ø90mm og op til 6000mm
           rørlængder, med mange forskellige radier.
         </p>
-
-        <Button nav><span class="skew-x-[40deg]">læs mere</span></Button>
+        <a href="">
+          <Button nav><span class="skew-x-[40deg]">læs mere</span></Button>
+        </a>
       </div>
       <div class="service-component relative -mr-15 -ml-15 p-12 mh-auto">
         <h2 class="uppercase text-xl mb-5 leading-tight">RØROPTRÆK</h2>
