@@ -123,7 +123,7 @@
             class="absolute rotate-[45deg] h-[220%] w-[60%] bg-white -top-26 bottom-0 -left-10 right-0"
           ></div>
           <div
-            class="absolute bg-white bottom-0 left-0 right-0 h-[42px] w-full overflow-hidden"
+            class="absolute bg-white bottom-0 left-0 right-0 h-[42px] w-full"
           ></div>
 
           <!-- Picture here -->

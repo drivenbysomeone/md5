@@ -165,13 +165,13 @@
     </section>
     <section class="py-4 md:pt-28 md:pb-28 w-full overflow-hidden">
       <div
-        class="flex flex-wrap flex-col md:flex-row my-auto px-[15px] -mx-[15px]"
+        class="flex flex-wrap flex-col md:flex-row my-auto px-[15px] -mx-[15px] relative"
       >
         <div
-          class="md:w-1/2 pl-[15px] pr-[24px] sm:py-12 md:py-0 h-auto relative mb-4 mt-0"
+          class="md:w-1/2 pl-[15px] pr-[24px] sm:py-12 md:py-0 h-[400px] mb-4 mt-0"
         >
           <h2 class="uppercase mt-0 font-medium">underleverandør</h2>
-          <p class="mt-0 mb-0 relative">
+          <p class="mt-0 mb-0 relative mr-5 sm:mr-0">
             Korte leveringstider, hurtig ekspedition og høj kvalitet. Mangler du
             en underleverandør som kan producere emner i rustfrit stål, har du
             her fundet det rette sted, vores kompetencer inden for produktion og
@@ -180,31 +180,38 @@
             speciel fremstillede ting til fødevarer branchen, så lige meget hvad
             du skal have svejst i rustfrit stål kan vi være dig behjælpelig.MDS
             Stainless har de helt rigtige faciliteter, til fremstilling af emner
-            i rustfrit stål. Mangler du en underleverandør som kan arbejde
-            effektivt og hurtigt, så er vi de helt rigtige, vores store styrke
-            er at der ikke er ret langt fra at du kontakter os til produktionen
-            er i gang, vi kan også lave haste opgaver inden for kort tid, så
-            vægter du hurtigt ekspedition, kort leveringstid og høj kvalitet, så
-            får du det her.
+            i rustfrit stål.
+            <br />
+            <br />
+            Mangler du en underleverandør som kan arbejde effektivt og hurtigt,
+            så er vi de helt rigtige, vores store styrke er at der ikke er ret
+            langt fra at du kontakter os til produktionen er i gang, vi kan også
+            lave haste opgaver inden for kort tid, så vægter du hurtigt
+            ekspedition, kort leveringstid og høj kvalitet, så får du det her.
           </p>
         </div>
         <div
-          class="w-full md:w-1/2 relative overflow-hidden m-auto -bottom-5 right-0 sm:hidden sm:invisible md:block md:visible"
+          class="absolute w-full md:w-1/2 overflow-hidden m-auto -bottom-[24%] -right-60 sm:hidden sm:invisible md:block md:visible scale-[2.1] h-[400px]"
         >
+          <!-- Container for figures and image -->
+
           <!-- Triangle -->
           <div
-            class="absolute rotate-[45deg] h-[220%] w-[60%] bg-white -top-26 bottom-0 -left-10 right-0"
+            class="absolute rotate-[35deg] h-[220%] w-[60%] bg-white -top-26 bottom-0 -left-20 right-10 align-middle"
           ></div>
           <div
-            class="absolute bg-white bottom-0 left-0 right-0 h-[42px] w-full overflow-hidden"
+            class="absolute bg-white bottom-0 left-0 right-0 h-[120px] w-full"
           ></div>
-
+          <div
+            class="absolute bg-white top-0 left-0 right-0 h-[75px] w-full"
+          ></div>
           <!-- Picture here -->
           <img
             src="~/assets/images/rustfrit1.jpg"
             alt=""
-            class="hidden sm:hidden md:block md:visible"
+            class="hidden sm:hidden md:block md:visible bottom-0"
           />
+          <!-- Container for triangle -->
         </div>
       </div>
     </section>
