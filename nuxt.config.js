@@ -35,7 +35,15 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: [
+    [
+      "nuxt-gmaps",
+      {
+        key: "AIzaSyAxIH39-UUfqXPFcKgNyeMRFfz6MW7lZvE",
+      },
+    ],
+    "nuxt-breakpoints",
+  ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

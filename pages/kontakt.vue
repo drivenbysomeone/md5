@@ -4,38 +4,75 @@
       <div
         class="absolute -translate-x-2/4 -translate-y-2/4 top-[57%] left-1/2 z-3 text-center"
       >
-        <h1 class="text-[#212a4b] text-6xl leading-5 my-auto font-medium mb-2">
-          Kontakt os
-        </h1>
+        <h1 class="text-[#212a4b] text-6xl font-medium">Kontakt os</h1>
         <p class="text-darker">
           Du kan kontakte os ved at udfylde kontaktformularen nedenfor
         </p>
       </div>
     </section>
-
+    <!--  -->
     <section class="map-section">
-      <!-- Row - form -->
-      <div class="flex flex-wrap -mr-[15px] -ml-[15px]">
-        <div class="absolute w-full h-full left-0 top-0 z-0 cursor-grab">
-          <ClientOnly>
-            <GMap
-              id="map"
-              ref="gMap"
-              language="en"
-              :center="$breakpoints ? mapCenterMobile : mapCenter"
-              :options="{
-                fullscreenControl: false,
-                styles: mapStyles,
-                disableDefaultUI: true,
-              }"
-              :zoom="mapZoom"
+      <!-- Container fluid -->
+      <div class="px-[15px]">
+        <!-- Row - form -->
+
+        <div class="flex flex-wrap flex-row -mx-[15px] relative font-normal">
+          <!-- Card container -->
+          <div class="px-[15px] sm:w-full pr-4 pl-4 xl:w-1/2 absolute">
+            <div
+              class="flex p-12 text-white bg-[#212a4b] border-solid border-black border-1"
             >
-              <GMapMarker :position="danmark"> </GMapMarker>
-              <GMapMarker :position="polen"> </GMapMarker>
-            </GMap>
-          </ClientOnly>
+              <div class="flex flex-row -mx-[15px]">
+                <div class="flex-col lg:w-2/5 pr-4 pl-4">
+                  <!-- Heading 3 -->
+                  <h3 class="pb-4">MDS Stainless Aps</h3>
+                  <ul class="list-none">
+                    <li class="pb-4">
+                      <!-- Immage missing + link-ref -->
+                      <a href="#" width="15px" class="mr-1">69 14 92 55</a>
+                    </li>
+                    <li class="pb-4">
+                      <!-- Image missing + link-ref -->
+                      <a href="#">Info@mds-stainless.com</a>
+                    </li>
+                    <li class="pb-4">
+                      <!-- Image missing -->
+                      Møllebakken 1,
+                      <br />
+                      <span class="md:ml-6">7361 Ejstrupholm </span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- INPUT FIELDS Remember Use input html for input fields -->
+                <div class="lg:w-3/5 pr-4 pl-4"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <ClientOnly>
+        <!-- <div class="w-full h-[400px] z-99 rounded-none text-white bg"> -->
+        <!-- Card container -->
+        <!-- <div class="p-12"> -->
+        <GMap
+          id="map"
+          ref="gMap"
+          language="en"
+          :center="$breakpoints.xs ? mapCenterMobile : mapCenter"
+          :options="{
+            fullscreenControl: false,
+            styles: mapStyles,
+            disableDefaultUI: true,
+          }"
+          :zoom="mapZoom"
+        >
+          <GMapMarker :position="danmark"> </GMapMarker>
+          <GMapMarker :position="polen"> </GMapMarker>
+        </GMap>
+        <!-- </div> -->
+        <!-- </div> -->
+      </ClientOnly>
     </section>
   </div>
 </template>
@@ -287,7 +324,7 @@ export default {
 }
 section.map-section {
   position: relative;
-  padding: 4rem;
+  padding: 64px;
 }
 @media only screen and (max-device-width: 480px) {
   section.map-section {
@@ -325,5 +362,10 @@ textarea::placeholder {
 }
 a {
   color: white;
+}
+
+.card {
+  z-index: +99;
+  border-radius: 0;
 }
 </style>

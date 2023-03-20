@@ -164,9 +164,9 @@
         <h2 class="uppercase text-white">
           Kontakt os for at høre mere om dine muligheder,
         </h2>
-        <p class="pt-6 mt-0 mb-4"></p>
-        <a href="#">
-          <Button contact class="relative -right-1/3 bottom-0">
+        <p class="pt-6 mt-0 mb-4 relative"></p>
+        <a href="#" class="flex justify-center">
+          <Button contact>
             <span class="skew-x-[40deg] font-semibold text-base"
               >Kontakt os</span
             >

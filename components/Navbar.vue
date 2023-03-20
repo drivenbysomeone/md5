@@ -8,16 +8,18 @@
   >
     <div class="justify-between items-center flex transition duration-500 ease">
       <Logo />
+
+      <!-- When hamburger menu active -->
       <div
         class=""
         :class="
           hamburger
             ? 'bg-blue-100 flex transition duration-500 ease-in '
-            : 'bg-slate-100 hidden transition duration-500 ease-out '
+            : 'bg-slate-100 hidden transition duration-500 ease-out lg:hidden '
         "
       >
         <div
-          class="flex absolute top-[96px] left-0 flex-col basis-0 space-x-11 uppercase w-full bg-[#212a4b] bg-opacity-90 font-medium text-[#ffffffcc] rounded-sm z-20 h-[300px]"
+          class="flex absolute top-[96px] left-0 flex-col basis-0 space-x-11 uppercase w-full bg-[#212a4b] bg-opacity-90 font-medium text-[#ffffffcc] rounded-sm z-20 h-[300px] lg:top-5 lg:h-0"
         >
           <a href="/ydelser/" class="text-[#ffffffcc] hover:text-red ml-11"
             >Ydelser</a
@@ -27,6 +29,18 @@
           <a href="#" class="text-[#ffffffcc] hover:text-red">Om os</a>
           <a href="#" class="text-[#ffffffcc] hover:text-red">Kontakt os</a>
         </div>
+      </div>
+
+      <!-- When Large screen -->
+
+      <div
+        class="sm:hidden md:hidden lg:flex justify-between space-x-11 absolute top-5 right-24 font-semibold uppercase text-[18px]"
+      >
+        <a href="/ydelser/" class="text-[#ffffffcc] hover:text-red">Ydelser</a>
+        <a href="#" class="text-[#ffffffcc] hover:text-red">Certeficering</a>
+        <a href="#" class="text-[#ffffffcc] hover:text-red">Galleri</a>
+        <a href="#" class="text-[#ffffffcc] hover:text-red">Om os</a>
+        <a href="#" class="text-[#ffffffcc] hover:text-red">Kontakt os</a>
       </div>
 
       <!-- Hamburger menu botton menu -->
