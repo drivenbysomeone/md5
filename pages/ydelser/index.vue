@@ -7,11 +7,11 @@
         <!-- text wrappter -->
         <div class="text-wrapper text-[#212a4b] text-center p-[50px] mt-20">
           <!-- Heading -->
-          <h1 class="text-6xl font-medium">Ydelser</h1>
+          <h1 class="text-4xl font-medium">Ydelser</h1>
           <!-- wrapper relative top-[100px] left-[15px] w-\[calc\(100\%\+2rem\)\] -->
           <div class="wrapper">
             <!-- Wrapper for p. text darker -->
-            <p><strong class="text-[#64636b]"> DK: MDS ydelser</strong></p>
+            <p><strong class="text-[#64636b]"> DK: MDS Ydelser</strong></p>
             <p>
               MDS Stainless er en virksomhed, som har valgt at fokusere på
               fremstilling af produkter i rustfrit stål, det betyder at du får
@@ -163,53 +163,47 @@
         </div>
       </div>
     </section>
-    <section class="py-4 md:pb-28 md:pt-28 w-full overflow-hidden">
+    <section class="py-4 md:pt-28 md:pb-28 w-full overflow-hidden">
       <div
-        class="flex flex-wrap flex-col md:flex-row my-auto px-[15px] -mx-[15px] relative"
+        class="flex flex-wrap flex-col md:flex-row my-auto px-[15px] -mx-[15px]"
       >
         <div
-          class="md:w-1/2 pl-[24px] sm:py-12 md:py-0 h-[400px] mb-4 mt-0 z-300"
+          class="md:w-1/2 pl-[15px] pr-[24px] sm:py-12 md:py-0 h-auto relative mb-4 mt-0 text-left"
         >
-          <h2 class="uppercase font-medium">underleverandør</h2>
-          <p class="mt-0 mb-0 relative sm:mr-0 text-base">
-            Korte leveringstider, hurtig ekspedition og høj kvalitet. Mangler du
-            en underleverandør som kan producere emner i rustfrit stål, har du
-            her fundet det rette sted, vores kompetencer inden for produktion og
-            fremstilling af rustfrie produkter er stor, vi har speciale inden
-            for produktion af komponenter til vindmøller, men kan også lave
-            speciel fremstillede ting til fødevarer branchen, så lige meget hvad
-            du skal have svejst i rustfrit stål kan vi være dig behjælpelig.MDS
-            Stainless har de helt rigtige faciliteter, til fremstilling af emner
-            i rustfrit stål.
-            <br />
-            <br />
-            Mangler du en underleverandør som kan arbejde effektivt og hurtigt,
-            så er vi de helt rigtige, vores store styrke er at der ikke er ret
-            langt fra at du kontakter os til produktionen er i gang, vi kan også
-            lave haste opgaver inden for kort tid, så vægter du hurtigt
-            ekspedition, kort leveringstid og høj kvalitet, så får du det her.
-          </p>
+          <h2 class="uppercase mt-0 font-medium">underleverandør</h2>
+          Korte leveringstider, hurtig ekspedition og høj kvalitet. Mangler du
+          en underleverandør som kan producere emner i rustfrit stål, har du her
+          fundet det rette sted, vores kompetencer inden for produktion og
+          fremstilling af rustfrie produkter er stor, vi har speciale inden for
+          produktion af komponenter til vindmøller, men kan også lave speciel
+          fremstillede ting til fødevarer branchen, så lige meget hvad du skal
+          have svejst i rustfrit stål kan vi være dig behjælpelig.MDS Stainless
+          har de helt rigtige faciliteter, til fremstilling af emner i rustfrit
+          stål.
+          <br />
+          <br />
+          Mangler du en underleverandør som kan arbejde effektivt og hurtigt, så
+          er vi de helt rigtige, vores store styrke er at der ikke er ret langt
+          fra at du kontakter os til produktionen er i gang, vi kan også lave
+          haste opgaver inden for kort tid, så vægter du hurtigt ekspedition,
+          kort leveringstid og høj kvalitet, så får du det her.
         </div>
         <div
-          class="absolute w-full md:w-1/2 overflow-hidden m-auto -bottom-[24%] -right-64 sm:hidden sm:invisible md:flex md:visible scale-[2.1] h-[400px] lg:-right-52 lg:scale-125"
+          class="w-full md:w-1/2 relative overflow-hidden m-auto -bottom-5 right-0 sm:hidden sm:invisible md:block md:visible"
         >
-          <!-- Container for figures and image -->
-
           <!-- Triangle -->
           <div
-            class="absolute rotate-[45deg] h-[220%] w-[60%] bg-white -top-26 -bottom-16 -left-20 right-14 align-middle"
+            class="absolute rotate-[45deg] h-[220%] w-[60%] bg-white -top-26 bottom-0 -left-10 right-0"
           ></div>
           <div
-            class="absolute bg-white bottom-0 left-0 right-0 h-[137px] w-full"
+            class="absolute bg-white bottom-0 left-0 right-0 h-[42px] w-full"
           ></div>
-          <div
-            class="absolute bg-white top-0 left-0 right-0 h-[80px] w-full"
-          ></div>
+
           <!-- Picture here -->
           <img
             src="~/assets/images/rustfrit1.jpg"
             alt=""
-            class="hidden sm:hidden md:block md:visible bottom-0 object-cover"
+            class="hidden sm:hidden md:block md:visible"
           />
         </div>
       </div>
@@ -239,19 +233,22 @@
 
       <!-- Container for heading AND button -->
       <div
-        class="absolute transform -translate-x-1/2 -translate-y-32 z-2000 w-4/5 top-1/2 left-1/2 py-12 text-white text-center md:text-align-unset content-center align-middle"
+        class="absolute transform -translate-x-1/2 -translate-y-32 z-2000 w-4/5 top-1/2 left-1/2 py-12 text-white text-center md:text-align-unset content-center"
       >
-        <h2 class="uppercase text-white relative">
+        <h2 class="uppercase text-white">
           Kontakt os for at høre mere om dine muligheder
         </h2>
 
-        <p class="pt-6 mt-0 mb-4"></p>
+        <p class="pt-6 mt-0 mb-4 relative"></p>
+
+        <a href="#" class="flex justify-center">
+          <Button contact>
+            <span class="skew-x-[40deg] font-semibold text-base"
+              >Kontakt os</span
+            >
+          </Button>
+        </a>
       </div>
-      <a href="#" class="flex mx-auto justify-center">
-        <Button contact class="absolute content-center top-2/3">
-          <span class="skew-x-[40deg] font-semibold text-base">Kontakt os</span>
-        </Button>
-      </a>
     </section>
   </div>
 </template>

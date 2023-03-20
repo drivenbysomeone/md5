@@ -24,7 +24,9 @@
           <a href="/ydelser/" class="text-[#ffffffcc] hover:text-red ml-11"
             >Ydelser</a
           >
-          <a href="#" class="text-[#ffffffcc] hover:text-red">Certeficering</a>
+          <a href="/certeficering/" class="text-[#ffffffcc] hover:text-red"
+            >Certeficering</a
+          >
           <a href="#" class="text-[#ffffffcc] hover:text-red">Galleri</a>
           <a href="#" class="text-[#ffffffcc] hover:text-red">Om os</a>
           <a href="#" class="text-[#ffffffcc] hover:text-red">Kontakt os</a>
