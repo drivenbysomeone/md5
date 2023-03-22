@@ -135,7 +135,7 @@
         </div>
       </div>
     </section>
-    <!-- MANGLER -->
+    <!-- CTA -->
 
     <section class="relative h-auto max-h-[400px] overflow-hidden">
       <picture>
@@ -162,7 +162,7 @@
         class="absolute transform -translate-x-1/2 -translate-y-32 z-2000 w-4/5 top-1/2 left-1/2 py-12 text-white text-center md:text-align-unset content-center"
       >
         <h2 class="uppercase text-white">
-          Kontakt os for at høre mere om dine muligheder,
+          Kontakt os for at høre mere om dine muligheder
         </h2>
         <p class="pt-6 mt-0 mb-4 relative"></p>
         <a href="#" class="flex justify-center">

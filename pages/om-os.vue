@@ -55,29 +55,182 @@
     </section>
     <!-- Team section -->
     <section class="py-28 relative">
-      <div class="mx-28 px-[15px]">
-        <div class="flex flex-row flex-wrap -mx-[15px]">
-          <!-- Heading container -->
-          <div
-            class="px-[15px] text-center text-[#212a4b] absolute z-2000 -translate-y-2/4 -translate-x-2/4 top-1/2 left-1/2 w-[80%]"
-          >
-            <!-- Text-wrapper -->
+      <!-- container - set Media Queries -->
+      <div class="mx-auto">
+        <div class="mx-28 px-[15px]">
+          <div class="flex flex-row flex-wrap -mx-[15px] justify-center">
+            <!-- Heading container -->
+            <div class="px-[15px] text-center text-[#212a4b]">
+              <!-- Text-wrapper -->
 
-            <h2 class="mb-[8px]">Hvem er vi?</h2>
-            <p class="text-[#64636b] pb-4">Mød holdet bag MDS Stainless</p>
+              <h2 class="mb-[8px] font-medium">Hvem er vi?</h2>
+              <p class="text-[#64636b] mt-0 mb-4">
+                Mød holdet bag MDS Stainless
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Team members -->
+        <div class="flex flex-row -mx-[15px] flex-wrap">
+          <!-- person 1 -->
+          <div class="p-12 md:w-1/2 lg:w-1/3 xl:w-1/3 sm:w-full content-center">
+            <img
+              src="https://mds-stainless.dk/img/uploads/mads_danielsen.jpg"
+              alt=""
+              class="align-middle w-full"
+            />
+            <h3 class="font-medium text-lg pt-4 mb-2">Mads Danielsen</h3>
+            <h4 class="font-medium text-[#64636b] text-xl mb-2">
+              CTO and Founder
+            </h4>
+            <p class="text-lg p-0 m-0">
+              <img
+                src="~/assets/images/mail-blue.svg"
+                alt=""
+                class="w-4 mr-[2px] inline"
+              />
+              <a href="#" class="text-[#212a4b]">Mads@mds-stainless.com</a>
+            </p>
+          </div>
+          <!-- Person 2 -->
+          <div class="p-12 md:w-1/2 lg:w-1/3 xl:w-1/3 sm:w-full content-center">
+            <img
+              src="https://mds-stainless.dk/img/uploads/kasper.jpg"
+              alt=""
+              class="align-middle w-full"
+            />
+            <h3 class="font-medium text-lg pt-4 mb-2">Kasper Nissen</h3>
+            <h4 class="font-medium text-[#64636b] text-xl mb-2">
+              CEO and Partner
+            </h4>
+            <p class="text-lg p-0 m-0">
+              <img
+                src="~/assets/images/mail-blue.svg"
+                alt=""
+                class="w-4 mr-[2px] inline"
+              />
+              <a href="#" class="text-[#212a4b]">Kni@mds-stainless.com</a>
+            </p>
+          </div>
+          <!-- Person 3 -->
+          <div class="p-12 md:w-1/2 lg:w-1/3 xl:w-1/3 sm:w-full content-center">
+            <img
+              src="~/assets/images/team/peter-sauer.jpg"
+              alt=""
+              class="align-middle w-full"
+            />
+            <h3 class="font-medium text-lg pt-4 mb-2">Peter Sauer</h3>
+            <h4 class="font-medium text-[#64636b] text-xl mb-2">
+              Teamlead Pipe Bending
+            </h4>
+            <p class="text-lg p-0 m-0">
+              <img
+                src="~/assets/images/mail-blue.svg"
+                alt=""
+                class="w-4 mr-[2px] inline"
+              />
+              <a href="#" class="text-[#212a4b]"
+                >Produktion@mds-stainless.com</a
+              >
+            </p>
+          </div>
+          <!-- Person 4 -->
+          <div class="p-12 md:w-1/2 lg:w-1/3 xl:w-1/3 sm:w-full content-center">
+            <img
+              src="~/assets/images/team/kenny-both.jpg"
+              alt=""
+              class="align-middle w-full"
+            />
+            <h3 class="font-medium text-lg pt-4 mb-2">Kenny Both Rokkjær</h3>
+            <h4 class="font-medium text-[#64636b] text-xl mb-2">
+              Teamlead Welding
+            </h4>
+            <p class="text-lg p-0 m-0">
+              <img
+                src="~/assets/images/mail-blue.svg"
+                alt=""
+                class="w-4 mr-[2px] inline"
+              />
+              <a href="#" class="text-[#212a4b]"
+                >produktion@mds-stainless.com</a
+              >
+            </p>
+          </div>
+          <!-- Person 5 -->
+          <div class="p-12 md:w-1/2 lg:w-1/3 xl:w-1/3 sm:w-full content-center">
+            <img
+              src="https://mds-stainless.dk/img/uploads/mathilde.jpg"
+              alt=""
+              class="align-middle w-full"
+            />
+            <h3 class="font-medium text-lg pt-4 mb-2">Mathilde Leveillard</h3>
+            <h4 class="font-medium text-[#64636b] text-xl mb-2">
+              Production Engineer
+            </h4>
+            <p class="text-lg p-0 m-0">
+              <img
+                src="~/assets/images/mail-blue.svg"
+                alt=""
+                class="w-4 mr-[2px] inline"
+              />
+              <a href="#" class="text-[#212a4b]">mal@mds-stainless.com</a>
+            </p>
           </div>
         </div>
       </div>
-      <!-- Team members -->
-      <div class="flex flex-row -mx-[15px] flex-wrap p-12">
-        <!-- person 1 -->
-        <div class="p-2 md:w-1/2">
-          <img
-            src="https://mds-stainless.dk/img/uploads/mads_danielsen.jpg"
-            alt=""
-            class="align-middle w-full"
-          />
-        </div>
+    </section>
+    <!-- Team CTA -->
+    <section class="relative h-auto max-h-[400px] overflow-hidden">
+      <picture>
+        <source
+          :srcSet="require('~/assets/images/cnc.jpg?webp')"
+          type="image/webp"
+        />
+        <source
+          :srcSet="require('~/assets/images/cnc.jpg')"
+          type="image/jpeg"
+        />
+        <img
+          :src="require('~/assets/images/cnc.jpg')"
+          alt="MDS Stainless kontakt os"
+          class="-mt-[20%] h-auto align-middle border-none"
+          width="100%"
+        />
+      </picture>
+      <!-- Blue overlay here! -->
+      <div
+        class="absolute z-1000 h-full w-full inset-0 bg-[#212a4b] bg-opacity-90"
+      ></div>
+      <div
+        class="absolute transform -translate-x-1/2 -translate-y-32 z-2000 w-4/5 top-1/2 left-1/2 py-12 text-white text-center md:text-align-unset content-center"
+      >
+        <h2 class="uppercase text-white">
+          Har du brug for at komme i kontakt med os?
+        </h2>
+        <p class="pt-6 mt-0 mb-4 relative"></p>
+        <a href="#" class="flex justify-center absolute">
+          <Button contact>
+            <span class="skew-x-[40deg] font-bold text-base"
+              >Cutomer Service <br />
+
+              <span class="font-normal skew-x-[40deg] pt-2">
+                Ordre@mds-stainless.com</span
+              >
+            </span>
+          </Button>
+        </a>
+        <!-- Media Query -->
+        <a href="#" class="flex justify-center absolute left-1/2">
+          <Button contact>
+            <span class="skew-x-[40deg] font-bold text-base"
+              >Quality Management <br />
+
+              <span class="font-normal skew-x-[40deg] pt-2">
+                Quality@mds-stainless.com</span
+              >
+            </span>
+          </Button>
+        </a>
       </div>
     </section>
   </div>

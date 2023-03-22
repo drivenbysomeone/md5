@@ -19,19 +19,11 @@
         <div
           class="flex absolute top-[96px] left-0 flex-col basis-0 space-x-9 uppercase w-full bg-[#212a4b] bg-opacity-90 font-medium text-[#ffffffcc] rounded-sm z-20 h-[300px] lg:top-5 lg:h-0 transition-all ease-out duration-200"
         >
-          <a href="/ydelser/" class="text-[#ffffffcc] hover:text-red ml-9"
-            >Ydelser</a
-          >
-          <a href="/certeficering/" class="text-[#ffffffcc] hover:text-red-500"
-            >Certeficering</a
-          >
-          <a href="/galleri/" class="text-[#ffffffcc] hover:text-red"
-            >Galleri</a
-          >
-          <a href="/om-os/" class="text-[#ffffffcc] hover:text-red">Om os</a>
-          <a href="/kontakt-os/" class="text-[#ffffffcc] hover:text-red"
-            >Kontakt os</a
-          >
+          <a href="/ydelser/" class="text-[#ffffffcc] ml-9">Ydelser</a>
+          <a href="/certeficering/" class="text-[#ffffffcc]">Certeficering</a>
+          <a href="/galleri/" class="text-[#ffffffcc]">Galleri</a>
+          <a href="/om-os/" class="text-[#ffffffcc]">Om os</a>
+          <a href="/kontakt/" class="text-[#ffffffcc]">Kontakt os</a>
         </div>
       </div>
 
@@ -40,15 +32,11 @@
       <div
         class="sm:hidden md:hidden lg:flex justify-between space-x-12 absolute top-5 right-24 font-semibold uppercase text-[18px]"
       >
-        <a href="/ydelser/" class="text-[#ffffffcc] hover:text-red">Ydelser</a>
-        <a href="/certeficering/" class="text-[#ffffffcc] hover:text-red"
-          >Certeficering</a
-        >
-        <a href="/galleri/" class="text-[#ffffffcc] hover:text-red">Galleri</a>
-        <a href="/om-os/" class="text-[#ffffffcc] hover:text-red">Om os</a>
-        <a href="/kontakt-os/" class="text-[#ffffffcc] hover:text-red"
-          >Kontakt os</a
-        >
+        <a href="/ydelser/" class="text-[#ffffffcc]">Ydelser</a>
+        <a href="/certeficering/" class="text-[#ffffffcc]">Certeficering</a>
+        <a href="/galleri/" class="text-[#ffffffcc]">Galleri</a>
+        <a href="/om-os/" class="text-[#ffffffcc]">Om os</a>
+        <a href="/kontakt/" class="text-[#ffffffcc]">Kontakt os</a>
       </div>
 
       <!-- Hamburger menu botton menu -->

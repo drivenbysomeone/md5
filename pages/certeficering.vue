@@ -15,25 +15,23 @@
     <section class="bg-[#212a4b] text-white">
       <div class="px-[15px]">
         <div
-          class="flex lg:flex-row flex-wrap flex-row md:flex-row sm:flex-col -mx-[15px] justify-between"
+          class="flex lg:flex-row flex-wrap flex-row md:flex-row sm:flex-col -mx-[15px] justify-center content-center xs:w-full sm:w-full"
         >
-          <div
-            class="w-1/3 p-[48px] h-auto relative md:ml-[139.5px] lg:ml-[139.5px]xl:ml-[139.5px] m-0"
-          >
+          <div class="w-full md:w-1/3 lg:w-1/3 p-[48px] h-auto relative m-0">
             <h2 class="uppercase text-white font-medium mb-[20px] text-xl">
               21-805 MDS 2021
             </h2>
 
             <!-- Picture here -->
-            <img src="~/assets/images/21-805-2021.png" alt="" class="" />
+            <img src="~/assets/images/21-805-2021.png" alt="" class="cover" />
           </div>
-          <div class="w-1/3 p-[48px] h-auto relative">
+          <div class="w-full md:w-1/3 lg:w-1/3 p-[48px] h-auto relative">
             <h2 class="uppercase text-white font-medium mb-[20px] text-xl">
               ISO 9001
             </h2>
 
             <!-- Picture here -->
-            <img src="~/assets/images/iso_9001.png" alt="" class="" />
+            <img src="~/assets/images/iso_9001.png" alt="" class="cover" />
           </div>
         </div>
       </div>

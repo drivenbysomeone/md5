@@ -25,17 +25,33 @@
               <div class="flex flex-row -mx-[15px]">
                 <div class="flex-col lg:w-2/5 pr-4 pl-4">
                   <!-- Heading 3 -->
-                  <h3 class="pb-4">MDS Stainless Aps</h3>
+                  <h3 class="pb-4 font-semibold text-3xl">MDS Stainless Aps</h3>
                   <ul class="list-none">
                     <li class="pb-4">
                       <!-- Immage missing + link-ref -->
+
+                      <img
+                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI1LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDM4NCAzODQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4NCAzODQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojRkZGRkZGO30KPC9zdHlsZT4KPGc+Cgk8Zz4KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzYyLjcsMjY2LjdjLTI2LjYsMC01Mi4zLTQuMy03Ni4yLTEyLjJjLTcuNC0yLjMtMTUuOC0wLjYtMjEuNyw1LjJsLTQ2LjksNDcKCQkJYy02MC41LTMwLjctMTA5LjktODAuMS0xNDAuNi0xNDAuNWw0Ni45LTQ3LjFjNS45LTUuOSw3LjYtMTQuMyw1LjItMjEuN2MtNy45LTIzLjktMTIuMi00OS42LTEyLjItNzYuMkMxMTcuMyw5LjUsMTA3LjgsMCw5NiwwCgkJCUgyMS4zQzkuNiwwLDAsOS41LDAsMjEuM0MwLDIyMS43LDE2Mi4zLDM4NCwzNjIuNywzODRjMTEuOCwwLDIxLjMtOS41LDIxLjMtMjEuM1YyODhDMzg0LDI3Ni4yLDM3NC41LDI2Ni43LDM2Mi43LDI2Ni43eiIvPgoJPC9nPgo8L2c+Cjwvc3ZnPgo="
+                        alt=""
+                        class="w-[15px] inline"
+                      />
                       <a href="#" width="15px" class="mr-1">69 14 92 55</a>
                     </li>
                     <li class="pb-4">
                       <!-- Image missing + link-ref -->
+                      <img
+                        src="~/assets/images/mail.svg"
+                        alt=""
+                        class="w-[15px] inline"
+                      />
                       <a href="#">Info@mds-stainless.com</a>
                     </li>
                     <li class="pb-4">
+                      <img
+                        src="~/assets/images/location.svg"
+                        alt=""
+                        class="w-[15px] inline"
+                      />
                       <!-- Image missing -->
                       Møllebakken 1,
                       <br />
@@ -44,17 +60,40 @@
                   </ul>
                 </div>
                 <!-- INPUT FIELDS Remember Use input html for input fields -->
-                <div class="lg:w-3/5 pr-4 pl-4"></div>
+                <div class="lg:w-3/5 pr-4 pl-4">
+                  <form>
+                    <div class="flex flex-row relative -mx-[15px]">
+                      <div class="p-[15px]">
+                        <!-- Navn-felt -->
+                        <div class="mb-4 form-group">
+                          <input
+                            type="text"
+                            placeholder="Navn"
+                            required="required"
+                            class="form-control"
+                          />
+                          <!-- Email felt -->
+                          <div class="mb-4 form-group">
+                            <input
+                              type="text"
+                              placeholder="Navn"
+                              required="required"
+                              class="form-control"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <ClientOnly>
-        <!-- <div class="w-full h-[400px] z-99 rounded-none text-white bg"> -->
-        <!-- Card container -->
-        <!-- <div class="p-12"> -->
+      <!--       <ClientOnly>
+      
         <GMap
           id="map"
           ref="gMap"
@@ -70,9 +109,8 @@
           <GMapMarker :position="danmark"> </GMapMarker>
           <GMapMarker :position="polen"> </GMapMarker>
         </GMap>
-        <!-- </div> -->
-        <!-- </div> -->
-      </ClientOnly>
+  
+      </ClientOnly> -->
     </section>
   </div>
 </template>
