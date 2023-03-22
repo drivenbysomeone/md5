@@ -3,46 +3,52 @@
     fixed="top"
     toggleable="lg"
     type="dark"
-    class="w-full fixed overflow-visible z-10 bg-[#212a4b] bg-opacity-90 h-[96px] transition duration-500 ease"
+    class="w-full fixed overflow-visible z-10 bg-[#212a4b] bg-opacity-90 h-[96px] group-active:transition-all group-active:ease-in group-active:duration-200"
     :class="{ scrolled }"
   >
-    <div class="justify-between items-center flex transition duration-500 ease">
+    <div class="justify-between items-center flex">
       <Logo />
 
       <!-- When hamburger menu active -->
       <div
-        class=""
+        class="transition-all ease-in duration-200"
         :class="
-          hamburger
-            ? 'bg-blue-100 flex transition duration-500 ease-in '
-            : 'bg-slate-100 hidden transition duration-500 ease-out lg:hidden '
+          hamburger ? 'bg-blue-100 flex ' : 'bg-slate-100 hidden lg:hidden '
         "
       >
         <div
-          class="flex absolute top-[96px] left-0 flex-col basis-0 space-x-11 uppercase w-full bg-[#212a4b] bg-opacity-90 font-medium text-[#ffffffcc] rounded-sm z-20 h-[300px] lg:top-5 lg:h-0"
+          class="flex absolute top-[96px] left-0 flex-col basis-0 space-x-9 uppercase w-full bg-[#212a4b] bg-opacity-90 font-medium text-[#ffffffcc] rounded-sm z-20 h-[300px] lg:top-5 lg:h-0 transition-all ease-out duration-200"
         >
-          <a href="/ydelser/" class="text-[#ffffffcc] hover:text-red ml-11"
+          <a href="/ydelser/" class="text-[#ffffffcc] hover:text-red ml-9"
             >Ydelser</a
           >
-          <a href="/certeficering/" class="text-[#ffffffcc] hover:text-red"
+          <a href="/certeficering/" class="text-[#ffffffcc] hover:text-red-500"
             >Certeficering</a
           >
-          <a href="#" class="text-[#ffffffcc] hover:text-red">Galleri</a>
-          <a href="#" class="text-[#ffffffcc] hover:text-red">Om os</a>
-          <a href="#" class="text-[#ffffffcc] hover:text-red">Kontakt os</a>
+          <a href="/galleri/" class="text-[#ffffffcc] hover:text-red"
+            >Galleri</a
+          >
+          <a href="/om-os/" class="text-[#ffffffcc] hover:text-red">Om os</a>
+          <a href="/kontakt-os/" class="text-[#ffffffcc] hover:text-red"
+            >Kontakt os</a
+          >
         </div>
       </div>
 
       <!-- When Large screen -->
 
       <div
-        class="sm:hidden md:hidden lg:flex justify-between space-x-11 absolute top-5 right-24 font-semibold uppercase text-[18px]"
+        class="sm:hidden md:hidden lg:flex justify-between space-x-12 absolute top-5 right-24 font-semibold uppercase text-[18px]"
       >
         <a href="/ydelser/" class="text-[#ffffffcc] hover:text-red">Ydelser</a>
-        <a href="#" class="text-[#ffffffcc] hover:text-red">Certeficering</a>
-        <a href="#" class="text-[#ffffffcc] hover:text-red">Galleri</a>
-        <a href="#" class="text-[#ffffffcc] hover:text-red">Om os</a>
-        <a href="#" class="text-[#ffffffcc] hover:text-red">Kontakt os</a>
+        <a href="/certeficering/" class="text-[#ffffffcc] hover:text-red"
+          >Certeficering</a
+        >
+        <a href="/galleri/" class="text-[#ffffffcc] hover:text-red">Galleri</a>
+        <a href="/om-os/" class="text-[#ffffffcc] hover:text-red">Om os</a>
+        <a href="/kontakt-os/" class="text-[#ffffffcc] hover:text-red"
+          >Kontakt os</a
+        >
       </div>
 
       <!-- Hamburger menu botton menu -->
@@ -50,7 +56,7 @@
       <hamburger
         id="menu-btn"
         @click="hamburgerFn()"
-        class="block hamburger lg:hidden focus:outline-none z-20 relative top-7 right-4"
+        class="block hamburger lg:hidden focus:outline-none z-20 relative top-7 right-4 transition-all ease-out duration-200 peer"
         type="button"
       >
         <span class="hamburger-top"></span>
@@ -63,7 +69,7 @@
 
     <div
       id="menu"
-      class="space-y-4 hidden p-4 rounded-lg rgba(33,42,75,.9) z-100"
+      class="space-y-4 hidden p-4 rounded-lg rgba(33,42,75,.9) z-100 transition-all ease-out duration-200"
     >
       <div
         class="flex-col items-center justify-center w-full text-white rounded-sm"
@@ -236,10 +242,12 @@ nav.scrolled .navbar-brand:after {
     background: white;
     transform: translateY(0px);
     transition: transform 0.2s ease-out;
+    transition: all 0.25s;
   }
   .navbar a.nav-link:hover:after,
   .navbar a.nav-link.active:after {
     transform: translateY(5px);
+    transition: all 0.25s;
   }
 }
 @media (max-width: 1040px) {
@@ -270,7 +278,7 @@ nav.scrolled .navbar-brand:after {
   left: 0;
   background: #9c9aa6;
   transform: rotate(0);
-  transition: all 0.5s;
+  transition: all 0.25s;
 }
 
 .hamburger-middle {

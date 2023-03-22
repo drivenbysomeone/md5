@@ -15,7 +15,7 @@
     <section class="bg-[#212a4b] text-white">
       <div class="px-[15px]">
         <div
-          class="flex lg:flex-row flex-wrap flex-row md:flex-row sm:flex-col -mx-[15px]"
+          class="flex lg:flex-row flex-wrap flex-row md:flex-row sm:flex-col -mx-[15px] justify-between"
         >
           <div
             class="w-1/3 p-[48px] h-auto relative md:ml-[139.5px] lg:ml-[139.5px]xl:ml-[139.5px] m-0"

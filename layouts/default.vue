@@ -40,6 +40,14 @@ h1 {
   text-transform: uppercase;
 }
 
+h1,
+h2 {
+  @apply uppercase;
+}
+
+/* USE h1 {
+ @apply 
+}  */
 /* ALL BELOW has been converted from SCSS to css */
 
 *,
