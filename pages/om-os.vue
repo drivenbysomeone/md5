@@ -4,7 +4,7 @@
       <div class="text-[#212a4b] text-center">
         <div class="text-wrapper">
           <h1 class="font-medium uppercase text-6xl mb-2">Om os</h1>
-          <p class="text-[#64636b] mb-4 mt-0 font-normal text-base">
+          <p class="text-[#64636b] mb-4 mt-0 font-normal lg:text-xl">
             Vi er en mindre moderne smedevirksomhed, som har til huse i
             Ejstrupholm Midtjylland. Vi har over 700kvm produktionslokaler,
             fyldt med topmoderne maskiner som kan håndtere små og store emner
@@ -33,8 +33,10 @@
       }
     } -->
             <div>
-              <h2>alt fra prototype til serieproduktion</h2>
-              <p class="mb-4 mt-0">
+              <h2 class="text-5xl font-semibold pb-2">
+                alt fra prototype til serieproduktion
+              </h2>
+              <p class="mb-4 mt-0 text-xl leading-8">
                 Vi er sparingspartner fra prototype til serie produktion, og
                 vores mission er at lette vores kunders hverdag. Dette ligger vi
                 i hurtige leveringer samt kvalitets arbejde, vi står altid klar
@@ -54,7 +56,7 @@
       </div>
     </section>
     <!-- Team section -->
-    <section class="py-28 relative">
+    <section class="py-28 h-full mb-32">
       <!-- container - set Media Queries -->
       <div class="mx-auto">
         <div class="mx-28 px-[15px]">
@@ -63,8 +65,8 @@
             <div class="px-[15px] text-center text-[#212a4b]">
               <!-- Text-wrapper -->
 
-              <h2 class="mb-[8px] font-medium">Hvem er vi?</h2>
-              <p class="text-[#64636b] mt-0 mb-4">
+              <h2 class="mb-[8px] font-medium text-5xl">Hvem er vi?</h2>
+              <p class="text-[#64636b] mt-0 mb-4 text-xl">
                 Mød holdet bag MDS Stainless
               </p>
             </div>
@@ -180,7 +182,8 @@
       </div>
     </section>
     <!-- Team CTA -->
-    <section class="relative h-auto max-h-[400px] overflow-hidden">
+    <section class="relative h-auto">
+      <!-- NOTE Container media query missing - explaings the btns going below section -->
       <picture>
         <source
           :srcSet="require('~/assets/images/cnc.jpg?webp')"
@@ -193,39 +196,40 @@
         <img
           :src="require('~/assets/images/cnc.jpg')"
           alt="MDS Stainless kontakt os"
-          class="-mt-[20%] h-auto align-middle border-none"
+          class="h-[500px] align-middle border-none object-cover"
           width="100%"
         />
       </picture>
       <!-- Blue overlay here! -->
       <div
-        class="absolute z-1000 h-full w-full inset-0 bg-[#212a4b] bg-opacity-90"
+        class="absolute z-1000 w-full inset-0 bg-[#212a4b] bg-opacity-90"
       ></div>
+      <!-- Text wrapper -->
       <div
-        class="absolute transform -translate-x-1/2 -translate-y-32 z-2000 w-4/5 top-1/2 left-1/2 py-12 text-white text-center md:text-align-unset content-center"
+        class="absolute transform -translate-x-1/2 -translate-y-24 w-4/5 top-1/2 left-1/2 text-white text-center md:text-align-unset content-center flex flex-wrap justify-center"
       >
-        <h2 class="uppercase text-white">
+        <h2 class="uppercase text-white text-4xl pb-6 mb-4 w-full">
           Har du brug for at komme i kontakt med os?
         </h2>
-        <p class="pt-6 mt-0 mb-4 relative"></p>
-        <a href="#" class="flex justify-center absolute">
-          <Button contact>
-            <span class="skew-x-[40deg] font-bold text-base"
+
+        <a href="#" class="sm:mb-6">
+          <Button contact class="">
+            <span class="skew-x-[40deg] font-bold text-xl py-2"
               >Cutomer Service <br />
 
-              <span class="font-normal skew-x-[40deg] pt-2">
+              <span class="font-normal skew-x-[40deg]">
                 Ordre@mds-stainless.com</span
               >
             </span>
           </Button>
         </a>
         <!-- Media Query -->
-        <a href="#" class="flex justify-center absolute left-1/2">
-          <Button contact>
-            <span class="skew-x-[40deg] font-bold text-base"
+        <a href="#" class="">
+          <Button contact class="">
+            <span class="skew-x-[40deg] font-bold text-xl py-2"
               >Quality Management <br />
 
-              <span class="font-normal skew-x-[40deg] pt-2">
+              <span class="font-normal skew-x-[40deg]">
                 Quality@mds-stainless.com</span
               >
             </span>

@@ -4,7 +4,7 @@
       <div class="text-[#212a4b] text-center">
         <div class="text-wrapper">
           <h1 class="text-[56px] font-medium">Certificering</h1>
-          <p class="text-[#64636b] mt-0">
+          <p class="text-[#64636b] mt-0 lg:text-xl xl:text-2xl">
             Her kan du se vores certeficeringer indenfor...
           </p>
         </div>

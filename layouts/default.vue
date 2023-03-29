@@ -50,6 +50,10 @@ h2 {
 }  */
 /* ALL BELOW has been converted from SCSS to css */
 
+/* form-height {
+  @apply calc(1.5em + .75rem + 2px);
+} */
+
 *,
 *::before,
 *::after {

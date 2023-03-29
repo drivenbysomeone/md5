@@ -4,7 +4,7 @@
       <div class="text-[#212a4b] text-center">
         <div class="text-wrapper">
           <h1 class="font-medium uppercase text-6xl mb-2">Galleri</h1>
-          <p class="text-[#64636b] mb-4 mt-0 font-normal text-base">
+          <p class="text-[#64636b] mb-4 mt-0 font-normal text-base lg:text-xl">
             Her kan du se et udpluk af vores arbejde og nogle af vores dygtige
             kollegaer i aktion.
           </p>

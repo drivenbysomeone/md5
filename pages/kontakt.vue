@@ -18,12 +18,14 @@
 
         <div class="flex flex-wrap flex-row -mx-[15px] relative font-normal">
           <!-- Card container -->
-          <div class="px-[15px] sm:w-full pr-4 pl-4 xl:w-1/2 absolute">
+          <div class="px-[15px] sm:w-full xl:w-1/2 lg:w-1/2">
             <div
-              class="flex p-12 text-white bg-[#212a4b] border-solid border-black border-1"
+              class="flex flex-col p-12 text-white bg-[#212a4b] border-solid border-black border-1"
             >
-              <div class="flex flex-row -mx-[15px]">
-                <div class="flex-col lg:w-2/5 pr-4 pl-4">
+              <div class="flex flex-row flex-wrap -mx-[15px]">
+                <div
+                  class="flex-col relative w-full lg:flex-col px-4 lg:w-[43%]"
+                >
                   <!-- Heading 3 -->
                   <h3 class="pb-4 font-semibold text-3xl">MDS Stainless Aps</h3>
                   <ul class="list-none">
@@ -59,32 +61,42 @@
                     </li>
                   </ul>
                 </div>
-                <!-- INPUT FIELDS Remember Use input html for input fields -->
-                <div class="lg:w-3/5 pr-4 pl-4">
-                  <form>
-                    <div class="flex flex-row relative -mx-[15px]">
-                      <div class="p-[15px]">
-                        <!-- Navn-felt -->
-                        <div class="mb-4 form-group">
-                          <input
-                            type="text"
-                            placeholder="Navn"
-                            required="required"
-                            class="form-control"
-                          />
-                          <!-- Email felt -->
-                          <div class="mb-4 form-group">
-                            <input
-                              type="text"
-                              placeholder="Navn"
-                              required="required"
-                              class="form-control"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
+
+                <div
+                  class="flex flex-col gap-4 w-full box-content px-4 lg:w-[50%]"
+                >
+                  <input
+                    type="text"
+                    class="py-4 w-full bg-white px-2 h-2 text-black"
+                    placeholder="Navn"
+                  />
+                  <input
+                    type="text"
+                    class="py-4 w-full bg-white px-2 h-2 text-black"
+                    placeholder="Email"
+                  />
+                  <input
+                    type="text"
+                    class="py-4 w-full bg-white px-2 h-2 text-black"
+                    placeholder="Telefon"
+                  />
+                  <textarea
+                    id="message"
+                    rows="4"
+                    class="block p-2.5 w-full text-sm text-black placeholder:text-gray-400 placeholder:text-base focus:border-blue-500 active:border-blue-500"
+                    placeholder="Besked"
+                  ></textarea>
+
+                  <a href="#" class="flex justify-end w-full">
+                    <Button contact class="px-10 h-full">
+                      <span
+                        class="skew-x-[40deg] font-medium text-sm justify-end"
+                        >Send besked</span
+                      >
+                    </Button>
+                  </a>
+
+                  <!-- INPUT FIELDS Remember Use input html for input fields -->
                 </div>
               </div>
             </div>
@@ -131,208 +143,6 @@ export default {
     };
   },
 
-  data() {
-    return {
-      mailSent: false,
-      form: {},
-      mapCenter: {
-        lat: 55.0591763,
-        lng: 5.5849222,
-      },
-      mapCenterMobile: {
-        lat: 53.8591763,
-        lng: 12.5849222,
-      },
-      polen: {
-        lat: 53.1182999,
-        lng: 19.0391502,
-      },
-      danmark: {
-        lat: 56.03546,
-        lng: 9.31692,
-      },
-      mapZoom: 5,
-
-      mapStyles: [
-        {
-          elementType: "geometry",
-          stylers: [
-            {
-              color: "#f5f5f5",
-            },
-          ],
-        },
-        {
-          elementType: "labels.icon",
-          stylers: [
-            {
-              visibility: "off",
-            },
-          ],
-        },
-        {
-          elementType: "labels.text.fill",
-          stylers: [
-            {
-              color: "#616161",
-            },
-          ],
-        },
-        {
-          elementType: "labels.text.stroke",
-          stylers: [
-            {
-              color: "#f5f5f5",
-            },
-          ],
-        },
-        {
-          featureType: "administrative.land_parcel",
-          elementType: "labels",
-          stylers: [
-            {
-              visibility: "off",
-            },
-          ],
-        },
-        {
-          featureType: "administrative.land_parcel",
-          elementType: "labels.text.fill",
-          stylers: [
-            {
-              color: "#bdbdbd",
-            },
-          ],
-        },
-        {
-          featureType: "poi",
-          elementType: "geometry",
-          stylers: [
-            {
-              color: "#eeeeee",
-            },
-          ],
-        },
-        {
-          featureType: "poi",
-          elementType: "labels.text.fill",
-          stylers: [
-            {
-              color: "#757575",
-            },
-          ],
-        },
-        {
-          featureType: "poi.park",
-          elementType: "geometry",
-          stylers: [
-            {
-              color: "#e5e5e5",
-            },
-          ],
-        },
-        {
-          featureType: "poi.park",
-          elementType: "labels.text.fill",
-          stylers: [
-            {
-              color: "#9e9e9e",
-            },
-          ],
-        },
-        {
-          featureType: "road",
-          elementType: "geometry",
-          stylers: [
-            {
-              color: "#ffffff",
-            },
-          ],
-        },
-        {
-          featureType: "road.arterial",
-          elementType: "labels.text.fill",
-          stylers: [
-            {
-              color: "#757575",
-            },
-          ],
-        },
-        {
-          featureType: "road.highway",
-          elementType: "geometry",
-          stylers: [
-            {
-              color: "#dadada",
-            },
-          ],
-        },
-        {
-          featureType: "road.highway",
-          elementType: "labels.text.fill",
-          stylers: [
-            {
-              color: "#616161",
-            },
-          ],
-        },
-        {
-          featureType: "road.local",
-          elementType: "labels",
-          stylers: [
-            {
-              visibility: "off",
-            },
-          ],
-        },
-        {
-          featureType: "road.local",
-          elementType: "labels.text.fill",
-          stylers: [
-            {
-              color: "#9e9e9e",
-            },
-          ],
-        },
-        {
-          featureType: "transit.line",
-          elementType: "geometry",
-          stylers: [
-            {
-              color: "#e5e5e5",
-            },
-          ],
-        },
-        {
-          featureType: "transit.station",
-          elementType: "geometry",
-          stylers: [
-            {
-              color: "#eeeeee",
-            },
-          ],
-        },
-        {
-          featureType: "water",
-          elementType: "geometry",
-          stylers: [
-            {
-              color: "#c9c9c9",
-            },
-          ],
-        },
-        {
-          featureType: "water",
-          elementType: "labels.text.fill",
-          stylers: [
-            {
-              color: "#9e9e9e",
-            },
-          ],
-        },
-      ],
-    };
-  },
   methods: {
     resetForm() {
       this.form = {

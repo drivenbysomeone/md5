@@ -7,12 +7,16 @@
         <!-- text wrappter -->
         <div class="text-wrapper text-[#212a4b] text-center p-[50px] mt-20">
           <!-- Heading -->
-          <h1 class="text-4xl font-medium">Ydelser</h1>
+          <h1 class="text-4xl font-medium lg:text-6xl">Ydelser</h1>
           <!-- wrapper relative top-[100px] left-[15px] w-\[calc\(100\%\+2rem\)\] -->
           <div class="wrapper">
             <!-- Wrapper for p. text darker -->
-            <p><strong class="text-[#64636b]"> DK: MDS Ydelser</strong></p>
-            <p>
+            <p class="lg:text-xl xl:text-2xl">
+              <strong class="text-[#64636b] lg:text-xl xl:text-2xl">
+                DK: MDS Ydelser</strong
+              >
+            </p>
+            <p class="lg:text-xl">
               MDS Stainless er en virksomhed, som har valgt at fokusere på
               fremstilling af produkter i rustfrit stål, det betyder at du får
               den bedst mulige rådgivning, når du skal have fremstillet rustfrie
@@ -28,10 +32,10 @@
               attraktive priser, i MDS kvalitet. Vores verden er rustfri – vi
               ser frem til at skabe værdi for din forretning.
             </p>
-            <p>
+            <p class="lg:text-xl xl:text-2xl">
               <strong class="text-[#64636b]">GB: MDS Buisness scope</strong>
             </p>
-            <p>
+            <p class="lg:text-xl xl:text-2xl">
               Our focus is production of stainless steel welded pipe and hose
               assemblies, bending of pipe and, endforming of pipes and assembly
               of stainless steel hoses. We run prototyping, NPI and fast track
@@ -61,7 +65,7 @@
             <h2 class="text-white text-2xl mb-[20px]">Automatsvejsning</h2>
             <!-- Text -->
             <p
-              class="block text-[#d1d0da] text-[15px] mb-[50px] leading-6 text-base mt-0"
+              class="block text-[#d1d0da] text-[15px] mb-[50px] leading-6 text-base mt-0 lg:text-xl"
             >
               Vi kan tilbyde Automatisk tig svejsning, med emnevægt op til
               250kg, og længder op til 3000mm.
@@ -69,7 +73,9 @@
             <!-- Link to button -->
             <a href="#">
               <!-- Button -->
-              <Button nav><span class="skew-x-[40deg]">læs mere</span></Button>
+              <Button nav
+                ><span class="skew-x-[40deg] lg:text-xl">læs mere</span></Button
+              >
             </a>
           </div>
           <!-- Second column in container -->
@@ -78,7 +84,7 @@
             <h2 class="text-white text-2xl mb-[20px]">Cns berarbejdning</h2>
             <!-- Text -->
             <p
-              class="block text-[#d1d0da] text-[15px] mb-[50px] leading-6 text-base mt-0"
+              class="block text-[#d1d0da] text-[15px] mb-[50px] leading-6 text-base mt-0 lg:text-xl"
             >
               Vi kan tilbyde Automatisk tig svejsning, med emnevægt op til
               250kg, og længder op til 3000mm.
@@ -86,7 +92,9 @@
             <!-- Link to button -->
             <a href="#">
               <!-- Button -->
-              <Button nav><span class="skew-x-[40deg]">læs mere</span></Button>
+              <Button nav
+                ><span class="skew-x-[40deg] lg:text-xl">læs mere</span></Button
+              >
             </a>
           </div>
           <!-- third column in container -->
@@ -95,7 +103,7 @@
             <h2 class="text-white text-2xl mb-[20px]">Endeformning</h2>
             <!-- Text -->
             <p
-              class="block text-[#d1d0da] text-[15px] mb-[50px] leading-6 text-base mt-0"
+              class="block text-[#d1d0da] text-[15px] mb-[50px] leading-6 text-base mt-0 lg:text-xl"
             >
               Vi tilbyder ende formning i rustfri stål max godstykkelse 4mm, og
               med ende dybde på 300mm.
@@ -103,7 +111,9 @@
             <!-- Link to button -->
             <a href="#">
               <!-- Button -->
-              <Button nav><span class="skew-x-[40deg]">læs mere</span></Button>
+              <Button nav
+                ><span class="skew-x-[40deg] lg:text-xl">læs mere</span></Button
+              >
             </a>
           </div>
           <!-- fourth column in container & Second row -->
@@ -112,7 +122,7 @@
             <h2 class="text-white text-2xl mb-[20px]">Rørbukning</h2>
             <!-- Text -->
             <p
-              class="block text-[#d1d0da] text-[15px] mb-[50px] leading-6 text-base mt-0"
+              class="block text-[#d1d0da] text-[15px] mb-[50px] leading-6 text-base mt-0 lg:text-xl"
             >
               Vi udfører rørbukning i rustfri stål, fra Ø10-Ø90mm og op til
               6000mm rørlængder, med mange forskellige radier.
@@ -120,7 +130,9 @@
             <!-- Link to button -->
             <a href="#">
               <!-- Button -->
-              <Button nav><span class="skew-x-[40deg]">læs mere</span></Button>
+              <Button nav
+                ><span class="skew-x-[40deg] lg:text-xl">læs mere</span></Button
+              >
             </a>
           </div>
           <!-- Second column in container -->
@@ -129,7 +141,7 @@
             <h2 class="text-white text-2xl mb-[20px]">Røroptræk</h2>
             <!-- Text -->
             <p
-              class="block text-[#d1d0da] text-[15px] mb-[50px] leading-6 text-base mt-0"
+              class="block text-[#d1d0da] text-[15px] mb-[50px] leading-6 text-base mt-0 lg:text-xl"
             >
               Vi udfører røroptræk i rustfri stål, og med vores eget udviklet
               optræksystem kan vi tilbyde optræk til særdeles fordelagtige
@@ -138,7 +150,9 @@
             <!-- Link to button -->
             <a href="#">
               <!-- Button -->
-              <Button nav><span class="skew-x-[40deg]">læs mere</span></Button>
+              <Button nav
+                ><span class="skew-x-[40deg] lg:text-xl">læs mere</span></Button
+              >
             </a>
           </div>
           <!-- third column in container -->
@@ -149,7 +163,7 @@
             </h2>
             <!-- Text -->
             <p
-              class="block text-[#d1d0da] text-[15px] mb-[50px] leading-6 text-base mt-0"
+              class="block text-[#d1d0da] text-[15px] mb-[50px] leading-6 text-base mt-0 lg:text-xl"
             >
               Vi kan tilbyde Automatisk tig svejsning, med emnevægt op til
               250kg, og længder op til 3000mm.
@@ -157,7 +171,9 @@
             <!-- Link to button -->
             <a href="#">
               <!-- Button -->
-              <Button nav><span class="skew-x-[40deg]">læs mere</span></Button>
+              <Button nav
+                ><span class="skew-x-[40deg] lg:text-xl">læs mere</span></Button
+              >
             </a>
           </div>
         </div>
@@ -171,22 +187,24 @@
           class="md:w-1/2 pl-[15px] pr-[24px] sm:py-12 md:py-0 h-auto relative mb-4 mt-0 text-left"
         >
           <h2 class="uppercase mt-0 font-medium">underleverandør</h2>
-          Korte leveringstider, hurtig ekspedition og høj kvalitet. Mangler du
-          en underleverandør som kan producere emner i rustfrit stål, har du her
-          fundet det rette sted, vores kompetencer inden for produktion og
-          fremstilling af rustfrie produkter er stor, vi har speciale inden for
-          produktion af komponenter til vindmøller, men kan også lave speciel
-          fremstillede ting til fødevarer branchen, så lige meget hvad du skal
-          have svejst i rustfrit stål kan vi være dig behjælpelig.MDS Stainless
-          har de helt rigtige faciliteter, til fremstilling af emner i rustfrit
-          stål.
-          <br />
-          <br />
-          Mangler du en underleverandør som kan arbejde effektivt og hurtigt, så
-          er vi de helt rigtige, vores store styrke er at der ikke er ret langt
-          fra at du kontakter os til produktionen er i gang, vi kan også lave
-          haste opgaver inden for kort tid, så vægter du hurtigt ekspedition,
-          kort leveringstid og høj kvalitet, så får du det her.
+          <p class="lg:text-xl">
+            Korte leveringstider, hurtig ekspedition og høj kvalitet. Mangler du
+            en underleverandør som kan producere emner i rustfrit stål, har du
+            her fundet det rette sted, vores kompetencer inden for produktion og
+            fremstilling af rustfrie produkter er stor, vi har speciale inden
+            for produktion af komponenter til vindmøller, men kan også lave
+            speciel fremstillede ting til fødevarer branchen, så lige meget hvad
+            du skal have svejst i rustfrit stål kan vi være dig behjælpelig.MDS
+            Stainless har de helt rigtige faciliteter, til fremstilling af emner
+            i rustfrit stål.
+            <br />
+            <br />
+            Mangler du en underleverandør som kan arbejde effektivt og hurtigt,
+            så er vi de helt rigtige, vores store styrke er at der ikke er ret
+            langt fra at du kontakter os til produktionen er i gang, vi kan også
+            lave haste opgaver inden for kort tid, så vægter du hurtigt
+            ekspedition, kort leveringstid og høj kvalitet, så får du det her.
+          </p>
         </div>
         <div
           class="w-full md:w-1/2 relative overflow-hidden m-auto -bottom-5 right-0 sm:hidden sm:invisible md:block md:visible"
@@ -243,7 +261,7 @@
 
         <a href="#" class="flex justify-center">
           <Button contact>
-            <span class="skew-x-[40deg] font-semibold text-base"
+            <span class="skew-x-[40deg] font-semibold text-base lg:text-xl"
               >Kontakt os</span
             >
           </Button>
