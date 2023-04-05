@@ -1,30 +1,45 @@
 <template>
   <div>
+    <!-- Link can be inserted below in header -->
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
     <section class="h-[300px] bg-white relative overflow-hidden w-full">
       <div
-        class="absolute -translate-x-2/4 -translate-y-2/4 top-[57%] left-1/2 z-3 text-center"
+        class="absolute -translate-x-2/4 -translate-y-2/4 top-[65%] left-1/2 z-3 text-center"
       >
-        <h1 class="text-[#212a4b] text-6xl font-medium">Kontakt os</h1>
-        <p class="text-darker">
+        <h1 class="hover:text-[#212a4b] text-6xl font-medium">Kontakt os</h1>
+        <p class="text-darker relative">
           Du kan kontakte os ved at udfylde kontaktformularen nedenfor
         </p>
       </div>
     </section>
-    <!--  -->
-    <section class="map-section">
-      <!-- Container fluid -->
-      <div class="px-[15px]">
+
+    <!-- Map & form container NOTE set mb-->
+    <div class="relative overflow-visible mb-80 lg:mb-24">
+      <Map class="mapContainer" />
+
+      <section
+        class="absolute -translate-y-1/4 -translate-x-1/2 left-1/2 w-[85%] lg:-translate-y-3/4 lg:-left-6 lg:translate-x-16 lg:w-1/2"
+      >
+        <!-- Container fluid -->
+
         <!-- Row - form -->
 
-        <div class="flex flex-wrap flex-row -mx-[15px] relative font-normal">
+        <div
+          class="flex flex-wrap sm:justify-between flex-row justify-center -mx-[15px] relative font-normal w-auto"
+        >
           <!-- Card container -->
-          <div class="px-[15px] sm:w-full xl:w-1/2 lg:w-1/2">
+          <div class="px-[15px]">
             <div
-              class="flex flex-col p-12 text-white bg-[#212a4b] border-solid border-black border-1"
+              class="flex flex-col flex-wrap p-12 text-white bg-[#212a4b] border-solid border-black border-1"
             >
               <div class="flex flex-row flex-wrap -mx-[15px]">
+                <!-- Adjust width below -->
                 <div
-                  class="flex-col relative w-full lg:flex-col px-4 lg:w-[43%]"
+                  class="flex-row flex-wrap relative px-4 justify-around w-1/3"
                 >
                   <!-- Heading 3 -->
                   <h3 class="pb-4 font-semibold text-3xl">MDS Stainless Aps</h3>
@@ -61,10 +76,8 @@
                     </li>
                   </ul>
                 </div>
-
-                <div
-                  class="flex flex-col gap-4 w-full box-content px-4 lg:w-[50%]"
-                >
+                <!-- Adjust width below -->
+                <div class="flex gap-4 px-4 flex-wrap flex-row w-2/3">
                   <input
                     type="text"
                     class="py-4 w-full bg-white px-2 h-2 text-black"
@@ -89,8 +102,7 @@
 
                   <a href="#" class="flex justify-end w-full">
                     <Button contact class="px-10 h-full">
-                      <span
-                        class="skew-x-[40deg] font-medium text-sm justify-end"
+                      <span class="skew-x-[40deg] font-medium text-sm"
                         >Send besked</span
                       >
                     </Button>
@@ -102,32 +114,14 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <!--       <ClientOnly>
-      
-        <GMap
-          id="map"
-          ref="gMap"
-          language="en"
-          :center="$breakpoints.xs ? mapCenterMobile : mapCenter"
-          :options="{
-            fullscreenControl: false,
-            styles: mapStyles,
-            disableDefaultUI: true,
-          }"
-          :zoom="mapZoom"
-        >
-          <GMapMarker :position="danmark"> </GMapMarker>
-          <GMapMarker :position="polen"> </GMapMarker>
-        </GMap>
-  
-      </ClientOnly> -->
-    </section>
+      </section>
+    </div>
   </div>
 </template>
 
 <script>
+/* Package npm add mapbox-gl has been installed - see packages */
+/* import mapboxgl from "mapbox-gl"; */
 export default {
   head() {
     return {
@@ -215,5 +209,21 @@ a {
 .card {
   z-index: +99;
   border-radius: 0;
+}
+
+/* MAP */
+
+/* .basemap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+} */
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
 </style>

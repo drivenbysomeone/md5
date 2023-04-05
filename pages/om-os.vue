@@ -1,10 +1,10 @@
 <template>
   <div>
-    <section class="h-[330px] overflow-hidden relative w-full bg-white">
+    <section class="h-[330px] overflow-hidden relative bg-white">
       <div class="text-[#212a4b] text-center">
         <div class="text-wrapper">
-          <h1 class="font-medium uppercase text-6xl mb-2">Om os</h1>
-          <p class="text-[#64636b] mb-4 mt-0 font-normal lg:text-xl">
+          <h1 class="font-medium uppercase mb-2 text-5xl">Om os</h1>
+          <p class="text-[#64636b] mb-4 mt-0 font-normal text-sm">
             Vi er en mindre moderne smedevirksomhed, som har til huse i
             Ejstrupholm Midtjylland. Vi har over 700kvm produktionslokaler,
             fyldt med topmoderne maskiner som kan håndtere små og store emner
@@ -14,44 +14,49 @@
       </div>
     </section>
     <!-- services mission - section -->
-    <section class="bg-[#212a4b] text-white lg:h-auto">
-      <div class="px-[15px] mx-auto">
-        <div class="flex flex-row flex-wrap -mx-[15px]">
-          <div class="py-12 pr-6 pl-[15px] lg:w-3/5 xl:w-1/2">
-            <!-- Wrapper - Important! - implement below -->
-            <!--  @media (max-width: 1220px) {
-    height: 460px;
-    .about-text {
-      .wrapper {
-        width: 83%;
-        left: 50%;
-      }
-      &:after {
-        margin: -49px -487px 0 0;
-        border-top: 480px solid #212a4b;
-        border-right: 480px solid transparent;
-      }
-    } -->
-            <div>
-              <h2 class="text-5xl font-semibold pb-2">
-                alt fra prototype til serieproduktion
-              </h2>
-              <p class="mb-4 mt-0 text-xl leading-8">
-                Vi er sparingspartner fra prototype til serie produktion, og
-                vores mission er at lette vores kunders hverdag. Dette ligger vi
-                i hurtige leveringer samt kvalitets arbejde, vi står altid klar
-                til at hjælpe vores kunder med hurtige løsninger og haste
-                leveringer. Som underleverandør til mejeri- &
-                vindmølleindustrien ved vi at pris, leveringstid samt kvalitet
-                er det vigtigste, Derfor er vores svejsepersonale blevet
-                certificeret efter gældende standarder, og vi har erhvervet os
-                WPQR`r og WPS`r til en lang række svejsesøm, så vi dækker et
-                stort område indenfor rustfri rørsvejsning. MDS Stainless ApS
-                har i foråret 2016 implementeret certificeringerne DS/EN ISO
-                9001:2008 samt ISO 3834-2:2006.
-              </p>
-            </div>
-          </div>
+    <section
+      class="py-4 md:py-14 w-full overflow-hidden bg-[#212a4b] text-white lg:py-7"
+    >
+      <div
+        class="flex flex-wrap flex-col md:flex-row my-auto px-7 -mx-[15px] text-start lg:align-middle lg:items-center"
+      >
+        <div
+          class="md:w-1/2 pl-[15px] pr-[24px] sm:py-12 md:py-0 relative mb-4 mt-0"
+        >
+          <h2 class="uppercase mt-0 font-medium">
+            alt fra prototype til serieproduktion
+          </h2>
+          <p class="mt-0 mb-0 relative my-auto">
+            Vi er sparingspartner fra prototype til serie produktion, og vores
+            mission er at lette vores kunders hverdag. Dette ligger vi i hurtige
+            leveringer samt kvalitets arbejde, vi står altid klar til at hjælpe
+            vores kunder med hurtige løsninger og haste leveringer. Som
+            underleverandør til mejeri- & vindmølleindustrien ved vi at pris,
+            leveringstid samt kvalitet er det vigtigste, Derfor er vores
+            svejsepersonale blevet certificeret efter gældende standarder, og vi
+            har erhvervet os WPQR`r og WPS`r til en lang række svejsesøm, så vi
+            dækker et stort område indenfor rustfri rørsvejsning. MDS Stainless
+            ApS har i foråret 2016 implementeret certificeringerne DS/EN ISO
+            9001:2008 samt ISO 3834-2:2006.
+          </p>
+        </div>
+        <div
+          class="w-full md:w-1/2 relative overflow-hidden m-auto -bottom-5 right-0 sm:hidden sm:invisible md:block md:visible"
+        >
+          <!-- Triangle -->
+          <div
+            class="absolute rotate-[45deg] h-[220%] w-[60%] bg-[#212a4b] -top-26 bottom-0 -left-10 right-0"
+          ></div>
+          <div
+            class="absolute bg-[#212a4b] bottom-0 left-0 right-0 h-[42px] w-full"
+          ></div>
+
+          <!-- Picture here -->
+          <img
+            src="~/assets/images/rustfrit1.jpg"
+            alt=""
+            class="hidden sm:hidden md:block md:visible"
+          />
         </div>
       </div>
     </section>

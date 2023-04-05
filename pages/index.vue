@@ -1,5 +1,6 @@
 <template>
   <!-- Navbar is implemented already ONCE in Navbar.vue -->
+
   <div>
     <!-- SECTION HERO -->
     <section class="relative lg:h-[80vh] h-full">
