@@ -10,17 +10,16 @@ module.exports = {
     ],
   },
   theme: {
-    container: {
-      screens: {
-        sm: "640px",
-        md: "768px",
-        lg: "991px",
-        xl: "1280px",
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "991px",
+      xl: "1200px",
 
-        /* NOTE 2nd div in footer uses 1200px, 992px, 768px and 576px as queries*/
-        tall: { raw: "(min-width: 800px)" },
-      },
+      /* NOTE 2nd div in footer uses 1200px, 992px, 768px and 576px as queries*/
+      tall: { raw: "(min-width: 800px)" },
     },
+    container: {},
 
     extend: {},
   },

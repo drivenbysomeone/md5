@@ -18,18 +18,19 @@
     </section>
 
     <!-- Map & form container NOTE set mb-->
-    <div class="relative overflow-visible mb-80 lg:mb-24">
+
+    <div class="relative overflow-visible mb-80 lg:mb-[550px]">
       <Map class="mapContainer" />
 
       <section
-        class="absolute -translate-y-1/4 -translate-x-1/2 left-1/2 w-[85%] lg:-translate-y-3/4 lg:-left-6 lg:translate-x-16 lg:w-1/2"
+        class="absolute -translate-y-1/4 -translate-x-1/2 left-1/2 w-[85%] xl:-translate-y-3/4 xl:-left-6 xl:translate-x-16 xl:w-1/2 lg:-translate-y-[100px]"
       >
         <!-- Container fluid -->
 
         <!-- Row - form -->
 
         <div
-          class="flex flex-wrap sm:justify-between flex-row justify-center -mx-[15px] relative font-normal w-auto"
+          class="flex flex-wrap sm:justify-between flex-row justify-center -mx-[15px] relative font-normal w-auto lg:flex-col"
         >
           <!-- Card container -->
           <div class="px-[15px]">
@@ -39,7 +40,7 @@
               <div class="flex flex-row flex-wrap -mx-[15px]">
                 <!-- Adjust width below -->
                 <div
-                  class="flex-row flex-wrap relative px-4 justify-around w-1/3"
+                  class="flex-row flex-wrap relative px-4 justify-around w-1/3 lg-w-full lg:flex-col"
                 >
                   <!-- Heading 3 -->
                   <h3 class="pb-4 font-semibold text-3xl">MDS Stainless Aps</h3>
@@ -77,7 +78,9 @@
                   </ul>
                 </div>
                 <!-- Adjust width below -->
-                <div class="flex gap-4 px-4 flex-wrap flex-row w-2/3">
+                <div
+                  class="flex gap-4 px-4 flex-wrap flex-row w-2/3 lg:w-full lg:flex-col"
+                >
                   <input
                     type="text"
                     class="py-4 w-full bg-white px-2 h-2 text-black"
