@@ -3,7 +3,7 @@
     <!-- ydelser-hero hero -->
     <section class="h-auto overflow-hidden relative">
       <!-- Container for ydelser -->
-      <div class="text-[#212a4b] mx-[50px] px-[15px]">
+      <div class="text-[#212a4b] mx-[135px] px-[15px]">
         <!-- text wrappter -->
         <div class="text-wrapper text-[#212a4b] text-center p-[50px] mt-20">
           <!-- Heading -->
@@ -62,11 +62,9 @@
           <!-- First column container -->
           <div class="md:w-1/3 p-12 relative">
             <!-- heading 2 -->
-            <h2 class="text-white text-2xl mb-[20px]">Automatsvejsning</h2>
+            <h2 class="text-white mb-[20px] text-2xl">Automatsvejsning</h2>
             <!-- Text -->
-            <p
-              class="block text-[#d1d0da] text-[15px] mb-[50px] leading-6 text-base mt-0 lg:text-xl"
-            >
+            <p class="text-[#d1d0da] leading-6 text-base block">
               Vi kan tilbyde Automatisk tig svejsning, med emnevægt op til
               250kg, og længder op til 3000mm.
             </p>
@@ -83,9 +81,7 @@
             <!-- heading 2 -->
             <h2 class="text-white text-2xl mb-[20px]">Cns berarbejdning</h2>
             <!-- Text -->
-            <p
-              class="block text-[#d1d0da] text-[15px] mb-[50px] leading-6 text-base mt-0 lg:text-xl"
-            >
+            <p class="block text-[#d1d0da] mb-[50px] leading-6 text-base">
               Vi kan tilbyde Automatisk tig svejsning, med emnevægt op til
               250kg, og længder op til 3000mm.
             </p>
@@ -102,9 +98,7 @@
             <!-- heading 2 -->
             <h2 class="text-white text-2xl mb-[20px]">Endeformning</h2>
             <!-- Text -->
-            <p
-              class="block text-[#d1d0da] text-[15px] mb-[50px] leading-6 text-base mt-0 lg:text-xl"
-            >
+            <p class="block text-[#d1d0da] mb-[50px] leading-6 text-base">
               Vi tilbyder ende formning i rustfri stål max godstykkelse 4mm, og
               med ende dybde på 300mm.
             </p>
@@ -121,9 +115,7 @@
             <!-- heading 2 -->
             <h2 class="text-white text-2xl mb-[20px]">Rørbukning</h2>
             <!-- Text -->
-            <p
-              class="block text-[#d1d0da] text-[15px] mb-[50px] leading-6 text-base mt-0 lg:text-xl"
-            >
+            <p class="block text-[#d1d0da] mb-[50px] leading-6 text-base">
               Vi udfører rørbukning i rustfri stål, fra Ø10-Ø90mm og op til
               6000mm rørlængder, med mange forskellige radier.
             </p>
@@ -140,9 +132,7 @@
             <!-- heading 2 -->
             <h2 class="text-white text-2xl mb-[20px]">Røroptræk</h2>
             <!-- Text -->
-            <p
-              class="block text-[#d1d0da] text-[15px] mb-[50px] leading-6 text-base mt-0 lg:text-xl"
-            >
+            <p class="block text-[#d1d0da] mb-[50px] leading-6 text-base">
               Vi udfører røroptræk i rustfri stål, og med vores eget udviklet
               optræksystem kan vi tilbyde optræk til særdeles fordelagtige
               priser.
@@ -162,9 +152,7 @@
               Svejsning i rustfrit stål
             </h2>
             <!-- Text -->
-            <p
-              class="block text-[#d1d0da] text-[15px] mb-[50px] leading-6 text-base mt-0 lg:text-xl"
-            >
+            <p class="block text-[#d1d0da] mb-[50px] leading-6 text-base">
               Vi kan tilbyde Automatisk tig svejsning, med emnevægt op til
               250kg, og længder op til 3000mm.
             </p>
@@ -181,13 +169,13 @@
     </section>
     <section class="py-4 md:pt-28 md:pb-28 w-full overflow-hidden">
       <div
-        class="flex flex-wrap flex-col md:flex-row my-auto px-[15px] -mx-[15px]"
+        class="flex flex-wrap flex-col md:flex-row my-auto px-[15px] -mx-[15px] min-h-[600px]:"
       >
         <div
-          class="md:w-1/2 pl-[15px] pr-[24px] sm:py-12 md:py-0 h-auto relative mb-4 mt-0 text-left"
+          class="md:w-1/2 pl-12 pr-[24px] sm:py-12 md:py-0 h-auto relative mb-4 mt-0 text-left py-auto"
         >
           <h2 class="uppercase mt-0 font-medium">underleverandør</h2>
-          <p class="lg:text-xl">
+          <p class="text-lg">
             Korte leveringstider, hurtig ekspedition og høj kvalitet. Mangler du
             en underleverandør som kan producere emner i rustfrit stål, har du
             her fundet det rette sted, vores kompetencer inden for produktion og
@@ -218,14 +206,16 @@
           ></div>
 
           <!-- Picture here -->
+
           <img
             src="~/assets/images/rustfrit1.jpg"
             alt=""
-            class="hidden sm:hidden md:block md:visible"
+            class="hidden sm:hidden md:block md:visible aspect-[3/2]"
           />
         </div>
       </div>
     </section>
+
     <!-- Cta contact -->
     <section class="relative h-auto max-h-[400px] overflow-hidden">
       <picture>

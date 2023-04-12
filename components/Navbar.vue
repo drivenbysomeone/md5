@@ -30,7 +30,7 @@
       <!-- When Large screen -->
 
       <div
-        class="sm:hidden md:hidden lg:flex justify-between space-x-12 absolute top-5 right-24 font-semibold uppercase text-[18px]"
+        class="hidden lg:visible lg:flex justify-between space-x-12 absolute top-5 right-24 font-semibold uppercase text-[18px]"
       >
         <a href="/ydelser/" class="text-[#ffffffcc]">Ydelser</a>
         <a href="/certeficering/" class="text-[#ffffffcc]">Certeficering</a>

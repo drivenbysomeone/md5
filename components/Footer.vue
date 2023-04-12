@@ -83,14 +83,18 @@
       <div class="flex flex-row flex-wrap -mr-[15px] -ml-[15px]">
         <div class="basis flex-grow w-full">
           © 2020 MDS Stainless ApS - Design af
-          <a href="https://littlegiants.dk/" target="_blank">LittleGiants</a>
+          <a class="text-black" href="https://littlegiants.dk/" target="_blank"
+            >LittleGiants</a
+          >
         </div>
       </div>
     </div>
     <!-- Banner container here -->
-    <div class="absolute overflow-hidden bottom-0 right-0"></div>
+    <div class="overflow-hidden flex flex-col lg:flex-row flex-wrap"></div>
     <!--  -->
-    <div class="flex justify-center m-0 p-0 h-24">
+    <div
+      class="lg:absolute lg:-bottom-14 lg:right-0 lg:block flex m-0 p-0 h-24"
+    >
       <picture class="NuxtLogo h-16 m-0">
         <img
           src="~/assets/images/logo_kræftensbekæmpelse.png"
@@ -112,4 +116,8 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+
+/* .mapbox-improve-map {
+  display: none;
+} */
 </style>

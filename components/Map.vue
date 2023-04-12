@@ -22,8 +22,10 @@ export default {
 
       style: "mapbox://styles/mapbox/light-v11",
       center: [9.317125, 56.035493],
-      zoom: 7,
+      zoom: 4.6,
       cooperativeGestures: true,
+      /* NOTE attributionControl removes the bottom right text on map - it MAY violate terms and services */
+      attributionControl: false,
     });
 
     /*   mapContainer.scrollZoom.disable(); */
@@ -40,7 +42,7 @@ export default {
     // .addTo(mapContainer);
 
     new mapboxgl.Marker({
-      color: "#57fa7d",
+      color: "#dc3545",
       scale: 1.2,
     })
       .setLngLat([9.317125, 56.035493])

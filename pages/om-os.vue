@@ -21,7 +21,7 @@
         class="flex flex-wrap flex-col md:flex-row my-auto px-7 -mx-[15px] text-start lg:align-middle lg:items-center"
       >
         <div
-          class="md:w-1/2 pl-[15px] pr-[24px] sm:py-12 md:py-0 relative mb-4 mt-0"
+          class="lg:w-1/2 pl-[15px] pr-[24px] sm:py-12 md:py-0 relative mb-4 mt-0"
         >
           <h2 class="uppercase mt-0 font-medium">
             alt fra prototype til serieproduktion
@@ -41,7 +41,7 @@
           </p>
         </div>
         <div
-          class="w-full md:w-1/2 relative overflow-hidden m-auto -bottom-5 right-0 sm:hidden sm:invisible md:block md:visible"
+          class="w-full lg:w-1/2 relative overflow-hidden m-auto -bottom-5 right-0 sm:hidden sm:invisible md:block md:visible"
         >
           <!-- Triangle -->
           <div
@@ -55,7 +55,7 @@
           <img
             src="~/assets/images/rustfrit1.jpg"
             alt=""
-            class="hidden sm:hidden md:block md:visible"
+            class="hidden lg:visible lg:block"
           />
         </div>
       </div>
@@ -187,7 +187,7 @@
       </div>
     </section>
     <!-- Team CTA -->
-    <section class="relative h-auto">
+    <section class="relative -translate-y-40">
       <!-- NOTE Container media query missing - explaings the btns going below section -->
       <picture>
         <source
@@ -211,13 +211,13 @@
       ></div>
       <!-- Text wrapper -->
       <div
-        class="absolute transform -translate-x-1/2 -translate-y-24 w-4/5 top-1/2 left-1/2 text-white text-center md:text-align-unset content-center flex flex-wrap justify-center"
+        class="absolute transform -translate-x-1/2 -translate-y-24 w-4/5 top-1/2 left-1/2 text-white text-center md:text-align-unset content-center flex flex-wrap justify-center -mt-20 lg:mt-0"
       >
-        <h2 class="uppercase text-white text-4xl pb-6 mb-4 w-full">
+        <h2 class="uppercase text-white font-semibold pb-6 mb-4 w-full">
           Har du brug for at komme i kontakt med os?
         </h2>
 
-        <a href="#" class="sm:mb-6">
+        <a href="#" class="mb-6">
           <Button contact class="">
             <span class="skew-x-[40deg] font-bold text-xl py-2"
               >Cutomer Service <br />
@@ -229,7 +229,7 @@
           </Button>
         </a>
         <!-- Media Query -->
-        <a href="#" class="">
+        <a href="#" class="mb-6">
           <Button contact class="">
             <span class="skew-x-[40deg] font-bold text-xl py-2"
               >Quality Management <br />

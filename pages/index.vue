@@ -8,12 +8,12 @@
       <div class="relative slide text-5xl">
         <!-- Slide arrows  -->
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner brightness-50">
         <div
           v-for="(img, i) in images"
           :id="`slide-${i}`"
           :key="i"
-          :class="`${active === i ? 'active' : 'left-full'}`"
+          :class="`${active === i ? 'active ' : 'left-full'}`"
           class="carousel-item inset-0 relative w-full transform transition-all duration-500 ease-in-out"
         >
           <div
@@ -34,21 +34,20 @@
             @click="sliderNext()"
             class="absolute top-1/2 right-4 border-x-[22px] border-x-transparent border-b-[22px] border-b-[#212a4b] rotate-90 border-opacity-80 cursor-pointer"
           ></div>
-          <div
-            class="absolute top-1/3 left-20 text-white font-semibold text-5xl uppercase text-left w-2/3"
-          >
-            Total Leverandør indenfor rusrfti rørbearbejdning
-            <p class="pt-6 m-0"></p>
-            <a href="/kontakt/">
-              <Button contact>
-                <span
-                  class="skew-x-[40deg] inline-block font-semibold text-base"
-                  >Kontakt os</span
-                >
-              </Button>
-            </a>
-          </div>
         </div>
+      </div>
+      <div
+        class="absolute top-1/3 left-20 text-white font-semibold text-5xl uppercase text-left w-2/3"
+      >
+        Total Leverandør indenfor rusrfti rørbearbejdning
+        <p class="pt-6 m-0"></p>
+        <a href="/kontakt/">
+          <Button contact>
+            <span class="skew-x-[40deg] inline-block font-semibold text-base"
+              >Kontakt os</span
+            >
+          </Button>
+        </a>
       </div>
     </section>
 
@@ -97,7 +96,7 @@
         class="flex flex-wrap flex-col md:flex-row my-auto px-[15px] -mx-[15px]"
       >
         <div
-          class="md:w-1/2 pl-[15px] pr-[24px] sm:py-12 md:py-0 h-auto relative mb-4 mt-0"
+          class="md:w-1/2 pl-12 pr-[24px] sm:py-12 md:py-0 h-auto relative mb-4 mt-0 py-auto"
         >
           <h2 class="uppercase mt-0 font-medium">
             alt fra prototype til serieproduktion
@@ -117,14 +116,14 @@
           </p>
         </div>
         <div
-          class="w-full md:w-1/2 relative overflow-hidden m-auto -bottom-5 right-0 sm:hidden sm:invisible md:block md:visible"
+          class="w-full md:w-1/2 relative overflow-hidden m-auto -bottom-5 right-0 sm:hidden sm:invisible md:block md:visible border-hidden"
         >
           <!-- Triangle -->
           <div
-            class="absolute rotate-[45deg] h-[220%] w-[60%] bg-white -top-26 bottom-0 -left-10 right-0"
+            class="absolute rotate-[45deg] h-[220%] w-[60%] bg-white -top-26 bottom-0 -left-10 right-0 border-hidden"
           ></div>
           <div
-            class="absolute bg-white bottom-0 left-0 right-0 h-[42px] w-full"
+            class="absolute bg-white bottom-0 left-0 right-0 h-[42px] w-full border-hidden"
           ></div>
 
           <!-- Picture here -->

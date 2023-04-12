@@ -19,28 +19,28 @@
 
     <!-- Map & form container NOTE set mb-->
 
-    <div class="relative overflow-visible mb-80 lg:mb-[650px]">
+    <div class="relative overflow-visible lg:mb-96 mb-[600px] xl:mb-[140px]">
       <Map class="mapContainer" />
 
       <section
-        class="absolute -translate-y-1/4 -translate-x-1/2 left-1/2 w-[85%] xl:-translate-y-3/4 xl:-left-6 xl:translate-x-16 xl:w-1/2 lg:-translate-y-[100px]"
+        class="absolute -translate-y-[75px] -translate-x-1/2 left-1/2 w-[85%] xl:-translate-y-3/4 xl:-left-6 xl:translate-x-16 xl:w-1/2"
       >
         <!-- Container fluid -->
 
         <!-- Row - form -->
 
         <div
-          class="flex flex-wrap sm:justify-between flex-row justify-center -mx-[15px] relative font-normal w-auto lg:flex-col"
+          class="flex flex-wrap sm:justify-between flex-col justify-center -mx-[15px] relative font-normal w-auto lg:flex-row"
         >
           <!-- Card container -->
           <div class="px-[15px]">
             <div
               class="flex flex-col flex-wrap p-12 text-white bg-[#212a4b] border-solid border-black border-1"
             >
-              <div class="flex flex-row flex-wrap -mx-[15px]">
+              <div class="flex flex-col lg:flex-row flex-wrap -mx-[15px]">
                 <!-- Adjust width below -->
                 <div
-                  class="flex-row flex-wrap relative px-4 justify-around w-1/3 lg-w-full lg:flex-col"
+                  class="flex-col flex-wrap relative px-4 justify-around w-1/3 lg:flex-row lg:w-1/3"
                 >
                   <!-- Heading 3 -->
                   <h3 class="pb-4 font-semibold text-3xl">MDS Stainless Aps</h3>
@@ -79,7 +79,7 @@
                 </div>
                 <!-- Adjust width below -->
                 <div
-                  class="flex gap-4 px-4 flex-wrap flex-row w-2/3 lg:w-full lg:flex-col"
+                  class="flex flex-row gap-4 px-4 flex-wrap w-full lg:w-2/3 lg:flex-row"
                 >
                   <input
                     type="text"
@@ -228,5 +228,13 @@ a {
   top: 0;
   bottom: 0;
   width: 100%;
+}
+
+/* Removes the maoBox logo on the bottom left corner of the map
+NOTE:
+This may violate the MapBox terms of service.  */
+
+.mapboxgl-ctrl-logo {
+  display: none !important;
 }
 </style>

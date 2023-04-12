@@ -15,65 +15,67 @@
     <section class="bg-[#212a4b]">
       <div class="px-[15px]">
         <!-- Section row -->
+        <!-- Justify center is wrong -->
         <div class="flex flex-row flex-wrap p-6 -mx-[15px]">
           <!-- First column/Item -->
-          <div class="p-6 md:w-1/4">
+          <div class="p-6 md:w-1/4 mx-auto">
             <img src="~/assets/images/galleri/DSC03768.JPG" alt="" />
           </div>
-          <div class="p-6 md:w-1/4">
+          <div class="p-6 md:w-1/4 mx-auto">
             <img src="~/assets/images/galleri/DSC03769.JPG" alt="" />
           </div>
-          <div class="p-6 md:w-1/4">
+          <div class="p-6 md:w-1/4 mx-auto">
             <img src="~/assets/images/galleri/DSC03771.JPG" alt="" />
           </div>
-          <div class="p-6 md:w-1/4">
+          <div class="p-6 md:w-1/4 mx-auto">
             <img src="~/assets/images/galleri/DSC03772.JPG" alt="" />
           </div>
-          <div class="p-6 md:w-1/4">
+          <div class="p-6 md:w-1/4 mx-auto">
             <img src="~/assets/images/galleri/DSC03773.JPG" alt="" />
           </div>
-          <div class="p-6 md:w-1/4">
+          <div class="p-6 md:w-1/4 mx-auto">
             <img src="~/assets/images/galleri/DSC03775.JPG" alt="" />
           </div>
-          <div class="p-6 md:w-1/4">
+          <div class="p-6 md:w-1/4 mx-auto">
             <img src="~/assets/images/galleri/DSC03776.JPG" alt="" />
           </div>
-          <div class="p-6 md:w-1/4">
+          <div class="p-6 md:w-1/4 mx-auto">
             <img src="~/assets/images/galleri/DSC03777.JPG" alt="" />
           </div>
-          <div class="p-6 md:w-1/4">
+          <div class="p-6 md:w-1/4 mx-auto">
             <img src="~/assets/images/galleri/DSC03778.JPG" alt="" />
           </div>
-          <div class="p-6 md:w-1/4">
+          <div class="p-6 md:w-1/4 mx-auto">
             <img src="~/assets/images/galleri/DSC03779.JPG" alt="" />
           </div>
-          <div class="p-6 md:w-1/4">
+          <div class="p-6 md:w-1/4 mx-auto">
             <img src="~/assets/images/galleri/DSC03780.JPG" alt="" />
           </div>
-          <div class="p-6 md:w-1/4">
+          <div class="p-6 md:w-1/4 mx-auto">
             <img src="~/assets/images/galleri/DSC03782.JPG" alt="" />
           </div>
-          <div class="p-6 md:w-1/4">
+          <div class="p-6 md:w-1/4 mx-auto">
             <img src="~/assets/images/galleri/DSC03783.JPG" alt="" />
           </div>
-          <div class="p-6 md:w-1/4">
+          <div class="p-6 md:w-1/4 mx-auto">
             <img src="~/assets/images/galleri/DSC03784.JPG" alt="" />
           </div>
-          <div class="p-6 md:w-1/4">
+          <div class="p-6 md:w-1/4 mx-auto">
             <img src="~/assets/images/galleri/DSC03785.JPG" alt="" />
           </div>
-          <div class="p-6 md:w-1/4">
+          <div class="p-6 md:w-1/4 mx-auto">
             <img src="~/assets/images/galleri/DSC03786.JPG" alt="" />
           </div>
-          <div class="p-6 md:w-1/4">
+          <div class="p-6 md:w-1/4 mx-auto">
             <img src="~/assets/images/galleri/DSC03787.JPG" alt="" />
           </div>
-          <div class="p-6 md:w-1/4">
+          <div class="p-6 md:w-1/4 mx-auto">
             <img src="~/assets/images/galleri/DSC03788.JPG" alt="" />
           </div>
-          <div class="p-6 md:w-1/4">
+          <div class="p-6 md:w-1/4 mx-auto">
             <img src="~/assets/images/galleri/DSC03789.JPG" alt="" />
           </div>
+          <div class="p-6 md:w-1/4 mx-auto"></div>
         </div>
       </div>
     </section>
