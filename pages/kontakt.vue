@@ -19,7 +19,7 @@
 
     <!-- Map & form container NOTE set mb-->
 
-    <div class="relative overflow-visible mb-80 lg:mb-[550px]">
+    <div class="relative overflow-visible mb-80 lg:mb-[650px]">
       <Map class="mapContainer" />
 
       <section
