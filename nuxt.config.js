@@ -1,5 +1,14 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
+  /* added below */
+  head() {
+    return {
+      script: [
+        { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" },
+      ],
+    };
+  },
+  /* above added */
   target: "static",
 
   // Global page headers: https://go.nuxtjs.dev/config-head
