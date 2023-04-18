@@ -7,6 +7,12 @@ export default {
     title: "md5",
     htmlAttrs: {
       lang: "en",
+
+      script: [
+        /*         {
+          src: "https://identity.netlify.com/v1/netlify-identity-widget.js",
+        }, */
+      ],
     },
     meta: [
       { charset: "utf-8" },

@@ -1,9 +1,9 @@
 <template>
   <div>
-    <section class="h-[330px] overflow-hidden relative bg-white">
+    <section class="h-[340px] overflow-hidden relative bg-white">
       <div class="text-[#212a4b] text-center">
         <div class="text-wrapper">
-          <h1 class="font-medium uppercase mb-2 text-5xl">Om os</h1>
+          <h1 class="font-medium uppercase mb-2 text-6xl">Om os</h1>
           <p class="text-[#64636b] mb-4 mt-0 font-normal text-sm">
             Vi er en mindre moderne smedevirksomhed, som har til huse i
             Ejstrupholm Midtjylland. Vi har over 700kvm produktionslokaler,

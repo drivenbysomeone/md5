@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="h-[300px] overflow-hidden relative w-full bg-white">
+    <section class="h-[340px] overflow-hidden relative w-full bg-white">
       <div class="text-[#212a4b] text-center">
         <div class="text-wrapper">
           <h1 class="font-medium uppercase text-6xl mb-2">Galleri</h1>
