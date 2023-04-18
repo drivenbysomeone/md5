@@ -17,11 +17,11 @@ export default {
     htmlAttrs: {
       lang: "en",
 
-      script: [
-        /*         {
+      /*    script: [
+                {
           src: "https://identity.netlify.com/v1/netlify-identity-widget.js",
-        }, */
-      ],
+        },
+      ], */
     },
     meta: [
       { charset: "utf-8" },
