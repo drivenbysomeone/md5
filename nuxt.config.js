@@ -64,12 +64,17 @@ export default {
   modules: [
     [
       "nuxt-gmaps",
+      "@nuxt/content",
       {
         key: "AIzaSyAxIH39-UUfqXPFcKgNyeMRFfz6MW7lZvE",
       },
     ],
+
     "nuxt-breakpoints",
   ],
+  content: {
+    // Options
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
