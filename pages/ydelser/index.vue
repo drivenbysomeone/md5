@@ -261,7 +261,7 @@
   </div>
 </template>
 
-<script>
+<!-- <script>
 export default {
   head() {
     return {
@@ -271,4 +271,4 @@ export default {
     };
   },
 };
-</script>
+</script> -->
