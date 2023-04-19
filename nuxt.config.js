@@ -29,11 +29,11 @@ export default {
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
     ],
-    script: [
+    /*     script: [
       {
         src: "https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js",
       },
-    ],
+    ], */
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {

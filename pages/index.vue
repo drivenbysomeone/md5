@@ -23,19 +23,19 @@
             ``
           </div>
           <!-- <img class="" :src="img" alt="First slide" /> -->
-
-          <!-- Arrow left -->
-          <div
-            @click="sliderPrev()"
-            class="absolute top-1/2 left-4 border-x-[22px] border-x-transparent border-b-[22px] border-b-[#212a4b] -rotate-90 cursor-pointer"
-          ></div>
-          <!-- Arrow right -->
-          <div
-            @click="sliderNext()"
-            class="absolute top-1/2 right-4 border-x-[22px] border-x-transparent border-b-[22px] border-b-[#212a4b] rotate-90 border-opacity-80 cursor-pointer"
-          ></div>
         </div>
+        <!-- Arrow left -->
+        <div
+          @click="sliderPrev()"
+          class="absolute top-1/2 left-4 border-x-[22px] border-x-transparent border-b-[22px] border-b-[#212a4b] -rotate-90 cursor-pointer"
+        ></div>
+        <!-- Arrow right -->
+        <div
+          @click="sliderNext()"
+          class="absolute top-1/2 right-4 border-x-[22px] border-x-transparent border-b-[22px] border-b-[#212a4b] rotate-90 border-opacity-80 cursor-pointer"
+        ></div>
       </div>
+
       <div
         class="absolute top-1/3 left-20 text-white font-semibold text-5xl uppercase text-left w-2/3"
       >
@@ -185,7 +185,11 @@ import Slideshow from "~/components/Slideshow.vue";
 export default Vue.extend({
   name: "IndexPage",
   data: () => ({
-    images: ["mdstainless1.jpg", "bw_mds.jpg", "rustfrit2.jpg"],
+    images: [
+      "/img/uploads/mdstainless1.jpg",
+      "/img/uploads/bw_mds.jpg",
+      "/img/uploads/rustfrit2.jpg",
+    ],
     active: 0,
   }),
 

@@ -1,0 +1,124 @@
+backend:
+  name: git-gateway
+  branch: master
+
+local_backend: true
+# publish_mode: editorial_workflow
+
+media_folder: static/img/uploads
+public_folder: /img/uploads
+
+collections:
+  - label: Sider
+    name: pages
+    editor:
+      preview: false
+    files:
+      - label: Forside
+        name: home
+        file: content/home.md
+        fields:
+          - { label: "Meta Titel", name: "meta_title", widget: "string" }
+          - { label: "Meta Beskrivelse", name: "meta_desc", widget: "text" }
+
+          - label: Hero tekst
+            name: hero_title
+            widget: string
+
+          - label: Fremhøvede ydelser
+            name: featured_services
+            widget: relation
+            collection: services
+            value_field: title
+            search_fields: ["title"]
+            display_fields: ["title"]
+            multiple: true
+
+          - label: Indhold (Første sektion)
+            name: first_section_content
+            widget: markdown
+
+      - label: Ydelser
+        name: services_page
+        file: content/services_page.md
+        fields:
+          - { label: "Meta Titel", name: "meta_title", widget: "string" }
+          - { label: "Meta Beskrivelse", name: "meta_desc", widget: "text" }
+
+          - { label: Titel, name: title, widget: string }
+          - { label: Undertitel, name: sub_title, widget: markdown }
+
+          - label: Indhold (Første sektion)
+            name: first_section_content
+            widget: markdown
+          - {
+              label: Billede (Første sektion),
+              name: first_section_image,
+              widget: image,
+            }
+
+      - label: Om Os
+        name: about_us
+        file: content/about_us.md
+        fields:
+          - { label: "Meta Titel", name: "meta_title", widget: "string" }
+          - { label: "Meta Beskrivelse", name: "meta_desc", widget: "text" }
+
+          - { label: Titel, name: title, widget: string }
+          - { label: Undertitel, name: sub_title, widget: text }
+
+          - label: Indhold (Første sektion)
+            name: first_section_content
+            widget: markdown
+
+          - label: Holdet
+            name: team
+            widget: list
+            collapsed: false
+            fields:
+              - { label: Billede, name: image, widget: image, required: false }
+              - { label: Navn, name: name, widget: string }
+              - { label: Stilling, name: position, widget: string }
+              - { label: Email, name: email, widget: string }
+
+  - label: Ydelser
+    name: services
+    editor:
+      preview: false
+    folder: content/services
+    fields:
+      - { label: "Meta Titel", name: "meta_title", widget: "string" }
+      - { label: "Meta Beskrivelse", name: "meta_desc", widget: "text" }
+
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: Beskrivelse, name: description, widget: text }
+      - { label: Header Billede, name: image, widget: image }
+
+      - {
+          label: Beskrivelse ved listevisning,
+          name: description_short,
+          widget: text,
+        }
+
+      - label: Sektioner
+        label_singular: Sektion
+        name: sections
+        required: false
+        collapsed: false
+        widget: list
+        types:
+          - label: Tekst
+            name: text
+            widget: object
+            fields:
+              - { label: Indhold, name: content, widget: markdown }
+          - label: Tekst sidestillet med billeder
+            name: text_with_images
+            widget: object
+            fields:
+              - { label: Indhold, name: content, widget: markdown }
+              - label: Images
+                name: images
+                widget: list
+                collapsed: false
+                field: { label: Image, name: image, widget: image }
