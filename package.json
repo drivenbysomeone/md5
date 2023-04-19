@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "concurrently \"npx netlify-cms-proxy-server\" nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
   "dependencies": {
     "@nuxt/content": "^2.5.2",
+    "concurrently": "^8.0.1",
     "core-js": "^3.25.3",
     "mapbox": "^1.0.0-beta10",
     "mapbox-gl": "^2.13.0",
