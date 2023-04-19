@@ -192,6 +192,13 @@ export default Vue.extend({
     ],
     active: 0,
   }),
+  head() {
+    return {
+      script: [
+        { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" },
+      ],
+    };
+  },
 
   mounted() {
     let i = 0;
